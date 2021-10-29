@@ -65,8 +65,7 @@ const about = document.getElementById('aboutest');
 const aboutcontainer = document.querySelector('.container-main');
 const blankArea = document.querySelector('main');
 const disableBar = document.querySelector('.container-main-disable');
-
-
+const aboutcontainer2 = document.querySelector('.container-main-textside');
 
 // ABOUT ME 
 
@@ -74,8 +73,13 @@ const disableBar = document.querySelector('.container-main-disable');
 function toggleAbout(){     
     //active the side bar(container) by clicking on ABOUT ME and keep it on the screen
     about.addEventListener('click', function(){
-      if(!aboutcontainer.classList.contains('container-main-active')){
+      if(!aboutcontainer.classList.contains('container-main-active')){        
+        //add animation to container at left side
          aboutcontainer.classList.toggle('container-main-active');
+        //add animation to contianer at the right side         
+         aboutcontainer2.classList.toggle('container-main-active');
+         
+         
       } 
     });
     // check if the bar is in the screen already
@@ -84,7 +88,8 @@ function toggleAbout(){
      // aboutcontainer.classList.toggle('container-main-active')
      }
 });
-    
+
+
 }
 toggleAbout();
 
