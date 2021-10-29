@@ -61,7 +61,6 @@ navSlide();
 //                   NAV BAR FUNCTIONS
 //----------------------------------------------------------
 
-
 const about = document.getElementById('aboutest');
 const aboutcontainer = document.querySelector('.container-main');
 const blankArea = document.querySelector('main');
@@ -69,7 +68,7 @@ const disableBar = document.querySelector('.container-main-disable');
 
 
 
-//  ABOUT ME 
+// ABOUT ME 
 
 //toggle information clicking on about
 function toggleAbout(){     
