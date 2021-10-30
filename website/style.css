@@ -3,7 +3,7 @@
 *{   
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 
@@ -12,6 +12,8 @@ body{
    /* background: rgb(200, 200, 200, 1); */ 
     background-size: fill;
     background-repeat: no-repeat;
+    overflow-x: hidden;   
+     
 }
 
 .dark{
@@ -102,6 +104,7 @@ color:silver;
     letter-spacing: 5px;
 }
 
+
 .container-home{
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Landscape_.jpg");
     background-size: 100%;
@@ -112,6 +115,7 @@ color:silver;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
     
 }
 
@@ -193,8 +197,6 @@ color:silver;
     text-align: center;
 }
 
-
-
 .container-main{    
     width: 40.4%;
     height: 100%; 
@@ -227,9 +229,6 @@ color:silver;
     transform: translateX(0%);   
 }
 
-.container-main-disable{
-    transform: translateX(-100%);
-}
 .container-main h1{
     font-family: 'Poppins', sans-serif;
     position: relative;
@@ -282,11 +281,11 @@ color:silver;
     display:block;
     position: absolute;
     align-items: center;
-    width: 300px;
+    width: 0px;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease;    
+    animation: progressBar 2s ease forwards;    
 }
 
 .bar2{
@@ -305,11 +304,11 @@ color:silver;
     display:block;
     position: absolute;
     align-items: center;
-    width: 300px;
+    width: 0px;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease;
+    animation: progressBar 2s ease forwards; 
 }
 
 .bar3{
@@ -329,11 +328,11 @@ color:silver;
     display:block;
     position: absolute;
     align-items: center;
-    width: 300px;
+    width: 0px;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease;
+    animation: progressBar 2s ease forwards; 
 }
 
 
@@ -416,14 +415,42 @@ color:silver;
 } 
 
 
-.container-projects{    
+.container-projects{     
     background:gray;
     height: 120vh;
 }
 
+.alura-projects{
+    top: 40%;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    list-style: none;    
+}
+
+.alura-projects a{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
 .container-contact{
+    display: flex;  
+    align-items: center;    
+    flex-direction: column;
     background:darkgray;
     height: 120vh;
+}
+
+.contact-window{
+    position: relative;
+    display: flex;
+    top: 15%;
+    align-items: center;    
+    width: 50%;
+    height: 50%;
+    background-color: rgba(92, 92, 92, 0.9);
 }
 
 /*RESPONSIVE OPTIONS*/

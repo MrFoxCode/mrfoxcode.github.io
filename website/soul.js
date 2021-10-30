@@ -1,50 +1,22 @@
-//
-// CODE HERE
-//
-//dark theme mode
+//-----------------------------------------------------------------
+//               DARK MODE / REFRESH PAGE TO START
+//-----------------------------------------------------------------
+//DARK THEME BUTTON
 function changeDark(){
     document.body.classList.toggle('dark');
 
 }
+//go back to top once the page is refreshed 
+window.onbeforeunload = function (){
+    window.scrollTo(0,0);
+  }
 
-// --- MOBILE MODE // RESPONSIVE NAV BAR 
-
-// Nav Slide Behavior
-//const navSlide=()=>{}
-function navSlide(){
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
-
-    //toggle sidebar (nav)
-    burger.addEventListener('click',()=>{
-    nav.classList.toggle('nav-active');
-
-    //Animate Nav-Links li
-    navLinks.forEach((link, index)=>{
-        if(link.style.animation){
-           link.style.animation ="";
-        }else{
-           link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.2}s`   
-        }
-    });
-
-
-    burger.classList.toggle('toggle');    
-
-
-  });
-    
-}
-navSlide();
 //-----------------------------------------------------------------
-//
+//               SCROLL NAV FUNCTION IN JQUERY
 //-----------------------------------------------------------------
-
 //jQuery smooth scroll function
-
  $('.nav-links a').on('click', function (e) {
-   if (this.hash !== '') {
+   if (this.hash !== ''){
      e.preventDefault();
 
      const hash = this.hash;
@@ -55,16 +27,12 @@ navSlide();
        },800);
    }
  });
-
-
-//----------------------------------------------------------
-//                   NAV BAR FUNCTIONS
-//----------------------------------------------------------
-
+//-----------------------------------------------------------------
+//                     NAV BAR FUNCTIONS
+//-----------------------------------------------------------------
 const about = document.getElementById('aboutest');
 const aboutcontainer = document.querySelector('.container-main');
 const blankArea = document.querySelector('main');
-const disableBar = document.querySelector('.container-main-disable');
 const aboutcontainer2 = document.querySelector('.container-main-textside');
 
 // ABOUT ME 
@@ -77,9 +45,7 @@ function toggleAbout(){
         //add animation to container at left side
          aboutcontainer.classList.toggle('container-main-active');
         //add animation to contianer at the right side         
-         aboutcontainer2.classList.toggle('container-main-active');
-         
-         
+         aboutcontainer2.classList.toggle('container-main-active');         
       } 
     });
     // check if the bar is in the screen already
@@ -89,9 +55,42 @@ function toggleAbout(){
      }
 });
 
-
 }
 toggleAbout();
 
+
+
+
+
 //---------------------------------------------------------------
 
+// --- MOBILE MODE // RESPONSIVE NAV BAR 
+
+// Nav Slide Behavior
+//const navSlide=()=>{}
+function navSlide(){
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.nav-links');
+  const navLinks = document.querySelectorAll('.nav-links li');
+
+  //toggle sidebar (nav)
+  burger.addEventListener('click',()=>{
+  nav.classList.toggle('nav-active');
+
+  //Animate Nav-Links li
+  navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+         link.style.animation ="";
+      }else{
+         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.2}s`   
+      }
+  });
+
+
+  burger.classList.toggle('toggle');    
+
+
+});
+  
+}
+navSlide();
