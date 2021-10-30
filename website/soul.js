@@ -12,6 +12,28 @@ window.onbeforeunload = function (){
   }
 
 //-----------------------------------------------------------------
+//                  CHECK VIEWPORT REVEAL
+//-----------------------------------------------------------------
+const getScreenSize = document.querySelector('.container-main-bg');
+
+  document.addEventListener('scroll', function(){
+  const checkScreen = document.documentElement.clientHeight;
+  const getScreenTop = getScreenSize.getBoundingClientRect().y;
+
+  if(checkScreen > getScreenTop){   
+    if(!aboutcontainer.classList.contains('container-main-active')){        
+      //add animation to container at left side
+       aboutcontainer.classList.toggle('container-main-active');
+      //add animation to contianer at the right side         
+       aboutcontainer2.classList.toggle('container-main-active');         
+    } 
+
+  }
+
+});
+
+
+//-----------------------------------------------------------------
 //               SCROLL NAV FUNCTION IN JQUERY
 //-----------------------------------------------------------------
 //jQuery smooth scroll function
@@ -57,11 +79,6 @@ function toggleAbout(){
 
 }
 toggleAbout();
-
-
-
-
-
 //---------------------------------------------------------------
 
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
@@ -94,3 +111,5 @@ function navSlide(){
   
 }
 navSlide();
+
+//-----------------------------------------------------------

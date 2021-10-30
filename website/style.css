@@ -114,9 +114,16 @@ color:silver;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   
-    
+    flex-direction: column;      
+}
+
+
+@keyframes showUp{
+    0%{
+     opacity: 0;
+    }100%{
+      opacity: 1;
+    }
 }
 
 .dark .container-home{
@@ -125,33 +132,38 @@ color:silver;
     background-size: 100%;
 }
 .container-home h1{
+    opacity: 0;
     font-size: 60px;
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: -10%;
     color: white;
-    display: flex;    
+    display: flex; 
+    animation: showUp 3s ease 1s forwards;   
 }
 .container-home h2{
+    opacity: 0;
     font-size: 20px;
-    position: absolute;
-    top: 54%;
+    position: relative;
+    top: -10%;
     color: white;
-    display: flex;    
+    display: flex;
+    animation: showUp 3s ease 1s forwards;    
 }
 
 .container-home button{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
-    position: absolute;
+    position: relative;
     display: flex;
-    top: 63%;
+    top: -6.5%;
     border: 2px solid;
     border-color:white;
     background: none;
     color: white;
+    opacity: 0;
     border-radius: 2rem;
     padding: 10px 25px;
-    
+    animation: showUp 3s ease 2s forwards;
     
 }
 .container-home button:hover{  
