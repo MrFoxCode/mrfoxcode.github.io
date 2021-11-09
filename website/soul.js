@@ -18,7 +18,7 @@ const getScreenSize = document.querySelector('.container-main-bg');
 
   document.addEventListener('scroll', function(){
   const checkScreen = document.documentElement.clientHeight;
-  const getScreenTop = getScreenSize.getBoundingClientRect().y;
+  const getScreenTop = getScreenSize.getBoundingClientRect().y; 
 
   if(checkScreen > getScreenTop){   
     if(!aboutcontainer.classList.contains('container-main-active')){        
@@ -29,9 +29,9 @@ const getScreenSize = document.querySelector('.container-main-bg');
     } 
 
   }
+ 
 
 });
-
 
 //-----------------------------------------------------------------
 //               SCROLL NAV FUNCTION IN JQUERY

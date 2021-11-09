@@ -20,7 +20,6 @@ body{
     background:rgb(65, 65, 65);
 }
 
-
 nav{
     font-family: 'Poppins', sans-serif; 
     position: fixed;
@@ -297,7 +296,7 @@ color:silver;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease forwards;    
+    animation: progressBar 2s ease forwards;     
 }
 
 .bar2{
@@ -424,30 +423,154 @@ color:silver;
     font-weight: normal;
     text-align: center;
     flex-direction: column;
-} 
+}
 
 
-.container-projects{     
-    background:gray;
-    height: 120vh;
+.container-projects{ 
+    font-family: 'Poppins', sans-serif;
+    background: gray;
+    height: 200vh;
+}
+.alura-project-title{
+    top: 8%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.alura-project-title h1{
+    font-size: 35px;   
+    position: relative;
+    display: flex;
+}
+.alura-project-title h3{
+    font-size: 15px;   
+    position: relative;
+    display: flex;
 }
 
 .alura-projects{
-    top: 40%;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
+    top: 15%;    
+    position: relative; 
     display: flex;
-    list-style: none;    
+    justify-content: center;
 }
-
-.alura-projects a{
-    font-size: 30px;
-    color: white;
+.alura-projects div{
+    margin: 1%;
+}
+.alura-projects h1{    
+    font-size: 113%;
+    color: white;     
+}
+.alura-projects button{
+    border: 0;
+    color: #ffffff;
+    background: rgba(193, 146, 76, 1);
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 4px;    
+    cursor: pointer;
+    bottom: 10%;
+    position: absolute;
+    align-items: center;
+}
+.alura-projects button:hover{
+    background: rgb(158, 120, 62);
+}
+.alura-projects button a{
     text-decoration: none;
+    color: white;
 }
 
-.container-contact{
+/* --------- TABELA --------- */
+.tabela{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;   
+    left:0%;
+    padding: 2rem;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(33, 33, 33, 0.7);
+}
+.tabela p{    
+    align-items: center;
+    top: 5%;
+    position: relative;   
+    color:white;
+}
+/* -------------------------- */
+/* --------- FLIPER --------- */
+.fliper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;   
+    left: 0%;
+    padding: 2rem;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(33, 33, 33, 0.7);
+}
+.fliper p{    
+    align-items: center;
+    top: 5%;
+    position: relative;   
+    color:white;
+}
+/* ------------------------------ */
+/* --------- MENTALISTA --------- */
+.mentalista{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;   
+    left: 0%;
+    padding: 2rem;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(33, 33, 33, 0.7);
+}
+.mentalista p{    
+    align-items: center;
+    top: 5%;
+    position: relative;   
+    color:white;
+}
+/* ----------------------------- */
+/* --------- CONVERSOR --------- */
+.conversor{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;   
+    left: 0%;
+    padding: 2rem;
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(33, 33, 33, 0.7);
+}
+.conversor p{    
+    align-items: center;
+    top: 5%;
+    position: relative;   
+    color:white;
+}
+/* ----------------------- */
+
+
+/* ------- CONTACT ------- */
+.container-contact{    
     display: flex;  
     align-items: center;    
     flex-direction: column;
@@ -455,7 +578,7 @@ color:silver;
     height: 120vh;
 }
 
-.contact-window{
+.contact-window{    
     position: relative;
     display: flex;
     top: 15%;
