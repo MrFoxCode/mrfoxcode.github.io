@@ -10,11 +10,17 @@ function changeDark(){
 window.onbeforeunload = function (){
     window.scrollTo(0,0);
   }
-
+  
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
 //-----------------------------------------------------------------
 const getScreenSize = document.querySelector('.container-main-bg');
+const getProgressBar1 = document.querySelector('.barProgress1');
+const getProgressBar2 = document.querySelector('.barProgress2');
+const getProgressBar3 = document.querySelector('.barProgress3');
+const getProgressBar4 = document.querySelector('.barProgress4');
+const getProgressBar5 = document.querySelector('.barProgress5');
+const getProgressBar6 = document.querySelector('.barProgress6');
 
   document.addEventListener('scroll', function(){
   const checkScreen = document.documentElement.clientHeight;
@@ -23,15 +29,44 @@ const getScreenSize = document.querySelector('.container-main-bg');
   if(checkScreen > getScreenTop){   
     if(!aboutcontainer.classList.contains('container-main-active')){        
       //add animation to container at left side
-       aboutcontainer.classList.toggle('container-main-active');
+      aboutcontainer.classList.toggle('container-main-active');
       //add animation to contianer at the right side         
-       aboutcontainer2.classList.toggle('container-main-active');         
-    } 
-
+      aboutcontainer2.classList.toggle('container-main-active');         
+    }
   }
- 
 
 });
+
+//check if progress Bars in .Skill-Bar is on the viewport
+document.addEventListener('scroll', function(){
+const checkScreen = document.documentElement.clientHeight;
+const getScreenTop = getProgressBar1.getBoundingClientRect().y;
+const getScreenTop2 = getProgressBar2.getBoundingClientRect().y;
+const getScreenTop3 = getProgressBar3.getBoundingClientRect().y;
+const getScreenTop4 = getProgressBar4.getBoundingClientRect().y;
+const getScreenTop5 = getProgressBar5.getBoundingClientRect().y;
+const getScreenTop6 = getProgressBar6.getBoundingClientRect().y;
+
+if(checkScreen > getScreenTop){
+  getProgressBar1.style.animation = 'progressBar 2s ease 0.5s forwards';
+}
+if(checkScreen > getScreenTop2){
+  getProgressBar2.style.animation = 'progressBar 2s ease 0.5s forwards';
+} 
+if(checkScreen > getScreenTop3){
+  getProgressBar3.style.animation = 'progressBar 2s ease 0.5s forwards';
+}
+if(checkScreen > getScreenTop4){
+  getProgressBar4.style.animation = 'progressBar 2s ease 0.5s forwards';
+}   
+if(checkScreen > getScreenTop5){
+  getProgressBar5.style.animation = 'progressBar 2s ease 0.5s forwards';
+}
+if(checkScreen > getScreenTop6){
+  getProgressBar6.style.animation = 'progressBar 2s ease 0.5s forwards';
+}  
+});
+
 
 //-----------------------------------------------------------------
 //               SCROLL NAV FUNCTION IN JQUERY

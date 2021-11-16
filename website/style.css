@@ -105,7 +105,7 @@ color:silver;
 
 
 .container-home{
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/Landscape_.jpg");
+    background-image: url("images/Landscape_.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     height: 120vh;
@@ -169,10 +169,8 @@ color:silver;
     text-decoration: underline;
     border-color: lightgrey;
 }
-
 .container-home button:active{
-    background-color: lightgrey;
-    
+    background-color: lightgrey;    
 }
 
 .container-main-bg{
@@ -183,7 +181,6 @@ color:silver;
     background-repeat: no-repeat;
     height: 200vh;
 }
-
 .container-main-textside{   
     float: right; 
     width: 59.59%;
@@ -213,7 +210,7 @@ color:silver;
     height: 100%; 
     background-color: rgb(33, 33, 33, 0.9);       
     transform: translateX(-100%);
-    transition: transform 0.4s ease-in 0.8s;
+    transition: transform 0.4s ease-in 0.8s;    
 }
 .container-main-content{
     position: relative;
@@ -296,7 +293,7 @@ color:silver;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease forwards;     
+     
 }
 
 .bar2{
@@ -319,7 +316,7 @@ color:silver;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease forwards; 
+   /* animation: progressBar 2s ease forwards;  */
 }
 
 .bar3{
@@ -343,9 +340,7 @@ color:silver;
     height: 13px;
     top: 0%;
     margin-bottom: 5px;
-    animation: progressBar 2s ease forwards; 
 }
-
 
 .skill-bar h4{
     font-family: 'Poppins', sans-serif;
@@ -383,6 +378,16 @@ color:silver;
     top: 10%;
     width: 300px;
     height: 13px;
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
+    margin-bottom: 5px;
+}
+.barProgress4{
+    position: absolute;
+    display: block;
+    align-items: center;
+    top: 0%;
+    width: 0px;
+    height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 80%, rgba(92, 92, 92, 1) 80%);
     margin-bottom: 5px;
 }
@@ -393,6 +398,15 @@ color:silver;
     top: 103.5%;
     width: 300px;
     height: 13px;
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
+}
+.barProgress5{
+    margin-bottom: 5px;
+    position: absolute;
+    align-items: center;
+    top:0%;
+    width: 0px;
+    height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 60%, rgba(92, 92, 92, 1) 60%);
 }
 .bar6{
@@ -401,6 +415,15 @@ color:silver;
     align-items: center;
     top: 200%;
     width: 300px;
+    height: 13px;
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
+}
+.barProgress6{
+    margin-bottom: 5px;
+    position: absolute;
+    align-items: center;
+    top: 0%;
+    width: 0px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 90%, rgba(92, 92, 92, 1) 90%);
 }
@@ -428,7 +451,9 @@ color:silver;
 
 .container-projects{ 
     font-family: 'Poppins', sans-serif;
-    background: gray;
+    /*background-image: url("images/minimalist-nature-wallpaper-017.jpg");*/
+    background-size: fill;
+    background-repeat: no-repeat;
     height: 200vh;
 }
 .alura-project-title{
@@ -593,6 +618,9 @@ color:silver;
     .nav-links{
         width: 50%;        
     }
+    body{
+        overflow-x: hidden;
+        }
 }
 
 @media screen and (max-width:768px){
