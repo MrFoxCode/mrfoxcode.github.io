@@ -26,7 +26,7 @@ const getProgressBar6 = document.querySelector('.barProgress6');
   const checkScreen = document.documentElement.clientHeight;
   const getScreenTop = getScreenSize.getBoundingClientRect().y; 
 
-  if(checkScreen > getScreenTop){   
+  if(checkScreen < getScreenTop){   
     if(!aboutcontainer.classList.contains('container-main-active')){        
       //add animation to container at left side
       aboutcontainer.classList.toggle('container-main-active');

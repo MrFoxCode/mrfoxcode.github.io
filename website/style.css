@@ -174,18 +174,18 @@ color:silver;
 }
 
 .container-main-bg{
-    background-image: url("https://cdn.discordapp.com/attachments/903542291338235904/903544046948057098/michal-parzuchowski-40545.jpg");
+   /* background-image: url("https://cdn.discordapp.com/attachments/903542291338235904/903544046948057098/michal-parzuchowski-40545.jpg"); */
    /* background: linear-gradient(rgba(200, 200, 200, 1), rgb(104, 104, 104)); */
     background-size: 150%;
-    background-position: bottom;   
+   
     background-repeat: no-repeat;
-    height: 200vh;
+    height: 230vh;
 }
 .container-main-textside{   
     float: right; 
     width: 59.59%;
     /*121.9vh*/
-    height: 200vh;     
+    height: 70%;     
     padding: 3%;       
     right: 0px;
     color: white;
@@ -205,21 +205,26 @@ color:silver;
     text-align: center;
 }
 
-.container-main{    
-    width: 40.4%;
-    height: 100%; 
-    background-color: rgb(33, 33, 33, 0.9);       
-    transform: translateX(-100%);
-    transition: transform 0.4s ease-in 0.8s;    
-}
-.container-main-content{
+.profile-pic-set{
     position: relative;
     display: flex;
-    align-items: center;    
-    flex-direction: column;
-    height: 100%;
-  
+    width: 30%;
 }
+
+.container-main{
+    padding: 2rem;
+    position: relative;
+    display: flex; 
+    bottom: 0%;   
+    width: 100%;
+    height: 32%; 
+    background-color: rgb(33, 33, 33, 0.9);       
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in 0.8s;  
+    justify-content: center; 
+
+}
+
 
 .dark .container-main{
     background-color: rgb(41, 41, 41);
@@ -257,10 +262,20 @@ color:silver;
 }
 
 .skill-bar{
-    top: 20%;
-    position: relative;
-    align-items: center;
+    top: 30%;
+    left: 10%;
+    position: absolute;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+   
 }
+.skill-bar div{
+    margin-bottom: 20%;
+    
+}
+
 
 /*PROGRESS BAR ANIMATION*/
 @keyframes progressBar {
@@ -269,7 +284,7 @@ color:silver;
         width: 0px;
     }to{
        
-        width: 300px;
+        width: 400px;
     }
 }
 
@@ -278,10 +293,10 @@ color:silver;
     position: relative;
     align-items: center;
     top: 10%;
-    width: 300px;
+    width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);  
-    margin-bottom: 5px;
+   
     
 }
 .barProgress1{
@@ -292,7 +307,7 @@ color:silver;
     width: 0px;
     height: 13px;
     top: 0%;
-    margin-bottom: 5px;
+   
      
 }
 
@@ -301,7 +316,7 @@ color:silver;
     position: relative;
     align-items: center;
     top: 103.5%;
-    width: 300px;
+    width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
 }
@@ -315,7 +330,7 @@ color:silver;
     width: 0px;
     height: 13px;
     top: 0%;
-    margin-bottom: 5px;
+   
    /* animation: progressBar 2s ease forwards;  */
 }
 
@@ -324,7 +339,7 @@ color:silver;
     position: relative;
     align-items: center;
     top: 200%;
-    width: 300px;
+    width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
 }
@@ -339,7 +354,7 @@ color:silver;
     width: 0px;
     height: 13px;
     top: 0%;
-    margin-bottom: 5px;
+   
 }
 
 .skill-bar h4{
@@ -357,7 +372,7 @@ color:silver;
     color: white;
     font-size: 12px;
     top: -46.5px;
-    left: 115px;
+    left: 39%;
     font-weight: normal;
     text-align: center;
     flex-direction: column;
@@ -365,18 +380,27 @@ color:silver;
 .softwares h1{
     position: relative;
     display: flex;
-    top: 75.5vh;
+    top: 0%;
 }
+
 .software-bar{
-    top: 50%;
-    position: relative;
-    align-items: center;
+    top: 30%;
+    left: 60%;
+    position: absolute;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
 }
+.software-bar div{
+    margin-bottom: 20%;
+}
+
 .bar4{
     position: relative;
     align-items: center;
     top: 10%;
-    width: 300px;
+    width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
     margin-bottom: 5px;
@@ -396,7 +420,7 @@ color:silver;
     position: relative;
     align-items: center;
     top: 103.5%;
-    width: 300px;
+    width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
 }
@@ -414,7 +438,7 @@ color:silver;
     position: relative;
     align-items: center;
     top: 200%;
-    width: 300px;
+    width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
 }
@@ -442,7 +466,7 @@ color:silver;
     color: white;
     font-size: 12px;
     top: -46.5px;
-    left: 115px;
+    left: 41%;
     font-weight: normal;
     text-align: center;
     flex-direction: column;
