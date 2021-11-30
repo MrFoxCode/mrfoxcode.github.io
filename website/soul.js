@@ -9,11 +9,19 @@ function changeDark(){
 //go back to top once the page is refreshed 
 window.onbeforeunload = function (){
     window.scrollTo(0,0);
-  }
-  
+  }  
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
 //-----------------------------------------------------------------
+
+//Vars 
+const about = document.getElementById('aboutest');
+const aboutcontainer = document.querySelector('.container-main');
+const blankArea = document.querySelector('main');
+const aboutcontainer2 = document.querySelector('.container-main-textside');
+const aboutcontainer3 = document.querySelector('.container-main-textside2');
+
+
 const getScreenSize = document.querySelector('.container-main-bg');
 const getProgressBar1 = document.querySelector('.barProgress1');
 const getProgressBar2 = document.querySelector('.barProgress2');
@@ -31,7 +39,8 @@ const getProgressBar6 = document.querySelector('.barProgress6');
       //add animation to container at left side
       aboutcontainer.classList.toggle('container-main-active');
       //add animation to contianer at the right side         
-      aboutcontainer2.classList.toggle('container-main-active');         
+      aboutcontainer2.classList.toggle('container-main-active');  
+      aboutcontainer3.classList.toggle('container-main-active');        
     }
   }
 
@@ -87,13 +96,8 @@ if(checkScreen > getScreenTop6){
 //-----------------------------------------------------------------
 //                     NAV BAR FUNCTIONS
 //-----------------------------------------------------------------
-const about = document.getElementById('aboutest');
-const aboutcontainer = document.querySelector('.container-main');
-const blankArea = document.querySelector('main');
-const aboutcontainer2 = document.querySelector('.container-main-textside');
-
 // ABOUT ME 
-
+/*
 //toggle information clicking on about
 function toggleAbout(){     
     //active the side bar(container) by clicking on ABOUT ME and keep it on the screen
@@ -102,7 +106,7 @@ function toggleAbout(){
         //add animation to container at left side
          aboutcontainer.classList.toggle('container-main-active');
         //add animation to contianer at the right side         
-         aboutcontainer2.classList.toggle('container-main-active');         
+         aboutcontainer2.classList.toggle('container-main-active');              
       } 
     });
     // check if the bar is in the screen already
@@ -114,6 +118,7 @@ function toggleAbout(){
 
 }
 toggleAbout();
+*/
 //---------------------------------------------------------------
 
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
