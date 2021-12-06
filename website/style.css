@@ -178,21 +178,29 @@ color:silver;
     background-size: fill; 
     background-repeat: no-repeat;
    /* background: linear-gradient(rgba(200, 200, 200, 1), rgb(104, 104, 104)); */   
-    height:180vh;
+    height:280vh;
 }
 .container-main-textside{
     padding: 5%;
     position: relative;
-    height:30%;   
+    height:40%;   
     color: white;  
     background:rgb(65, 65, 65, 0.7);
     transform: translateX(100%);
     transition: transform 0.4s ease-in 0.8s; 
 }
+
+.container-main-textside p{
+    margin-bottom: 5%;
+}
+.container-main-textside2 p{
+    margin-bottom: 5%;
+}
+
 .container-main-textside2{    
     padding: 5%;
     position: relative;
-    height:30%;   
+    height:35%;   
     color: white;  
     background:rgb(65, 65, 65, 0.7);
     transform: translateX(-100%);
@@ -248,7 +256,7 @@ color:silver;
     display: flex; 
     bottom: 0%;   
     width: 100%;
-    height: 40%; 
+    height: 25%; 
     background-color: rgb(33, 33, 33, 0.9);       
     transform: translateX(100%);
     transition: transform 0.4s ease-in 0.8s;  
@@ -259,6 +267,14 @@ color:silver;
 .dark .container-main{
     background-color: rgb(41, 41, 41);
 }
+.profile-pic-set{
+    display: flex;
+    position: relative;    
+    justify-content: center;
+    flex-direction: column;    
+    align-items: center;
+    margin-bottom: 2em;
+}
 
 .profile-pic{
     position: relative;
@@ -266,6 +282,8 @@ color:silver;
     border-radius: 50%;
     width: 35%;
     top: 10%;
+    flex-direction: column;
+    margin-bottom: 1em;    
 }
 
 .container-main-active{
@@ -504,13 +522,20 @@ color:silver;
 
 
 .container-projects{
-    position: relative;
-   
+    position: relative;   
     font-family: 'Poppins', sans-serif;
-    /*background-image: url("images/minimalist-nature-wallpaper-017.jpg");*/
-    background-size: fill;
+    background-image: url("images/Landscape_.jpg");
+    background-size: 150%;
+    background-position: bottom;
     background-repeat: no-repeat;
-    height: 200vh;
+    height: 230vh;
+}
+
+.dark .container-projects{
+    background-image: url("images/snow_house_quiet_night_the_stars_the_beautiful_scenery_alone.jpg");
+    background-size: 200%;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 .alura-project-title{
     top: 5%;
@@ -535,7 +560,7 @@ color:silver;
 }
 
 .alura-projects{
-    top: 15%;    
+    top: 10%;    
     position: relative; 
     display: flex;
     justify-content: center;
@@ -647,6 +672,94 @@ color:silver;
     position: relative;   
     color:white;
 }
+/*
+--------------------
+     CIDA BOT
+--------------------
+*/
+.other-projects{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 15%;
+}
+.other-projects-tittle{   
+    position: relative;    
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.other-projects h1{    
+    font-size: 113%;
+    color: white;     
+}
+
+.other-projects-tittle h1{
+    font-size: 35px;   
+    position: relative;
+    display: flex;
+}
+
+.other-projects-tittle h3{
+    font-size: 15px;   
+    position: relative;
+    display: flex;
+}
+
+.cida-pic{
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    width: 15%;   
+    flex-direction: column;
+    margin-bottom: 1em;    
+}
+
+.cida{
+    margin-top: 6%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;   
+    padding: 2rem;
+    width: 800px;
+    height: 400px;
+    background-color: rgb(33, 33, 33, 0.7);
+}
+.cida p{    
+    align-items: center;
+    top: 5%;
+    position: relative;   
+    color:white;
+}
+
+.other-projects button{
+    border: 0;
+    color: #ffffff;
+    background: rgba(193, 146, 76, 1);
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 15px;
+    border-radius: 4px;    
+    cursor: pointer;
+    bottom: 10%;
+    position: absolute;
+    align-items: center;
+}
+
+.other-projects button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
 /* ----------------------- */
 
 

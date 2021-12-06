@@ -21,7 +21,6 @@ const blankArea = document.querySelector('main');
 const aboutcontainer2 = document.querySelector('.container-main-textside');
 const aboutcontainer3 = document.querySelector('.container-main-textside2');
 
-
 const getScreenSize = document.querySelector('.container-main-bg');
 const getProgressBar1 = document.querySelector('.barProgress1');
 const getProgressBar2 = document.querySelector('.barProgress2');
@@ -75,7 +74,6 @@ if(checkScreen > getScreenTop6){
   getProgressBar6.style.animation = 'progressBar 2s ease 0.5s forwards';
 }  
 });
-
 
 //-----------------------------------------------------------------
 //               SCROLL NAV FUNCTION IN JQUERY
