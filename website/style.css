@@ -768,18 +768,32 @@ color:silver;
     display: flex;  
     align-items: center;    
     flex-direction: column;
-    background:darkgray;
+    background-image: url("images/Landscape_.jpg");
+    background-position: center;
     height: 120vh;
 }
 
-.contact-window{    
+.contact-window{
+    font-family: 'Poppins', sans-serif;
     position: relative;
     display: flex;
-    top: 15%;
-    align-items: center;    
+    top: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column;   
     width: 50%;
     height: 50%;
-    background-color: rgba(92, 92, 92, 0.9);
+    background-color: rgba(92, 92, 92, 0.0);
+}
+.contact-window h2{
+    font-size: 150%;       
+     color: white;       
+ }
+.contact-window h1{
+   font-size: 200%;       
+    color: white;       
 }
 
 /*RESPONSIVE OPTIONS*/

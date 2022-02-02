@@ -6,10 +6,21 @@ function changeDark(){
     document.body.classList.toggle('dark');
 
 }
+
 //go back to top once the page is refreshed 
 window.onbeforeunload = function (){
     window.scrollTo(0,0);
-  }  
+  }
+  
+  
+//Let's Talk! Button
+function letstalk(){
+
+}
+
+letstalk();
+
+
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
 //-----------------------------------------------------------------
