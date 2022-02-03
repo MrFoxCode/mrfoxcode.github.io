@@ -9,24 +9,30 @@ function changeDark(){
 
 //go back to top once the page is refreshed 
 window.onbeforeunload = function (){
-    window.scrollTo(0,0);
+  /*
+  var topOfThePage = document.getElementById('home');  
+  topOfThePage.scrollIntoView();
+  */
+  window.scrollTo(0,0);
   }
-  
-  
-//Let's Talk! Button
-function letstalk(){
+    
+ //go to contact section by clcking
+  function letsTalk(){
+    var buttonTalk = document.getElementById('talkButton');
+    var getContactId = document.getElementById('contact');
 
-}
-
-letstalk();
-
+    buttonTalk.addEventListener('click',()=>{
+     getContactId.scrollIntoView({behavior: "smooth"});  
+    });    
+ 
+  }
+  letsTalk();
 
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
 //-----------------------------------------------------------------
 
-//Vars 
-const about = document.getElementById('aboutest');
+//Vars
 const aboutcontainer = document.querySelector('.container-main');
 const blankArea = document.querySelector('main');
 const aboutcontainer2 = document.querySelector('.container-main-textside');
@@ -44,7 +50,7 @@ const getProgressBar6 = document.querySelector('.barProgress6');
   const checkScreen = document.documentElement.clientHeight;
   const getScreenTop = getScreenSize.getBoundingClientRect().y; 
 
-  if(checkScreen < getScreenTop){   
+  if(checkScreen > getScreenTop){   
     if(!aboutcontainer.classList.contains('container-main-active')){        
       //add animation to container at left side
       aboutcontainer.classList.toggle('container-main-active');
@@ -89,6 +95,8 @@ if(checkScreen > getScreenTop6){
 //-----------------------------------------------------------------
 //               SCROLL NAV FUNCTION IN JQUERY
 //-----------------------------------------------------------------
+
+
 //jQuery smooth scroll function
  $('.nav-links a').on('click', function (e) {
    if (this.hash !== ''){
@@ -102,34 +110,11 @@ if(checkScreen > getScreenTop6){
        },800);
    }
  });
-//-----------------------------------------------------------------
-//                     NAV BAR FUNCTIONS
-//-----------------------------------------------------------------
-// ABOUT ME 
-/*
-//toggle information clicking on about
-function toggleAbout(){     
-    //active the side bar(container) by clicking on ABOUT ME and keep it on the screen
-    about.addEventListener('click', function(){
-      if(!aboutcontainer.classList.contains('container-main-active')){        
-        //add animation to container at left side
-         aboutcontainer.classList.toggle('container-main-active');
-        //add animation to contianer at the right side         
-         aboutcontainer2.classList.toggle('container-main-active');              
-      } 
-    });
-    // check if the bar is in the screen already
-    aboutcontainer.addEventListener('click', function(){
-     if(aboutcontainer.classList.contains('container-main-active')){
-     // aboutcontainer.classList.toggle('container-main-active')
-     }
-});
 
-}
-toggleAbout();
-*/
+ 
 //---------------------------------------------------------------
-
+//                     MOBILE FUNCTION
+//---------------------------------------------------------------
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
 
 // Nav Slide Behavior
