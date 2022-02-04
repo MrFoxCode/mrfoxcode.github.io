@@ -9,17 +9,17 @@ function changeDark(){
 
 //go back to top once the page is refreshed 
 window.onbeforeunload = function (){
-  /*
+  
   var topOfThePage = document.getElementById('home');  
   topOfThePage.scrollIntoView();
-  */
-  window.scrollTo(0,0);
+  
+ //window.scrollTo(0,0);
   }
     
  //go to contact section by clcking
   function letsTalk(){
-    var buttonTalk = document.getElementById('talkButton');
-    var getContactId = document.getElementById('contact');
+    let buttonTalk = document.getElementById('talkButton');
+    let getContactId = document.getElementById('contact');
 
     buttonTalk.addEventListener('click',()=>{
      getContactId.scrollIntoView({behavior: "smooth"});  
@@ -27,6 +27,48 @@ window.onbeforeunload = function (){
  
   }
   letsTalk();
+
+//-----------------------------------------------------------------
+//           SCROLL FUNCTION (without using #href)
+//-----------------------------------------------------------------
+
+// navbar ID Refs
+let homeHref = document.getElementById('homeHref');
+let aboutHref = document.getElementById('aboutHref');
+let projectHref = document.getElementById('projectHref');
+let contactHref = document.getElementById('contactme');
+
+// ID sections
+let homeSection = document.getElementById('home');
+let aboutSection = document.getElementById('aboutme');
+let projectSection = document.getElementById('projects');
+let contactSection = document.getElementById('contact');
+
+// FUNCTION SCROLL WITH SCROLL BEHAVIOR
+function scrollTo(element) {
+  window.scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: element.offsetTop
+  });
+}
+//Scroll to Home Section
+homeHref.addEventListener('click', () => {
+  scrollTo(homeSection);
+});
+//scroll to About Section
+aboutHref.addEventListener('click', () => {
+  scrollTo(aboutSection);
+});
+//scroll to Projects Section
+projectHref.addEventListener('click', () => {
+  scrollTo(projectSection);
+});
+
+//scroll to Contact Section
+contactHref.addEventListener('click', () => {
+  scrollTo(contactSection);
+});
 
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
@@ -95,7 +137,7 @@ if(checkScreen > getScreenTop6){
 //-----------------------------------------------------------------
 //               SCROLL NAV FUNCTION IN JQUERY
 //-----------------------------------------------------------------
-
+/*
 
 //jQuery smooth scroll function
  $('.nav-links a').on('click', function (e) {
@@ -111,7 +153,7 @@ if(checkScreen > getScreenTop6){
    }
  });
 
- 
+ */
 //---------------------------------------------------------------
 //                     MOBILE FUNCTION
 //---------------------------------------------------------------
