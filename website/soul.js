@@ -23,8 +23,7 @@ window.onbeforeunload = function (){
 
     buttonTalk.addEventListener('click',()=>{
      getContactId.scrollIntoView({behavior: "smooth"});  
-    });    
- 
+    }); 
   }
   letsTalk();
 
@@ -68,6 +67,17 @@ projectHref.addEventListener('click', () => {
 //scroll to Contact Section
 contactHref.addEventListener('click', () => {
   scrollTo(contactSection);
+});
+
+//-----------------------------------------------------------------
+//                  CHANGE LANGUAGE FUNCTION
+//-----------------------------------------------------------------
+const langButton = document.querySelector('.changeLang button');
+const selectLang = document.querySelector('.selectedLang');
+
+//Change Language to Portuguese
+langButton.addEventListener('click', ()=>{
+  selectLang.classList.toggle('selectedLang-active');
 });
 
 //-----------------------------------------------------------------
@@ -134,26 +144,6 @@ if(checkScreen > getScreenTop6){
 }  
 });
 
-//-----------------------------------------------------------------
-//               SCROLL NAV FUNCTION IN JQUERY
-//-----------------------------------------------------------------
-/*
-
-//jQuery smooth scroll function
- $('.nav-links a').on('click', function (e) {
-   if (this.hash !== ''){
-     e.preventDefault();
-
-     const hash = this.hash;
-
-     $('html, body')
-       .animate({
-         scrollTop: $(hash).offset().top
-       },800);
-   }
- });
-
- */
 //---------------------------------------------------------------
 //                     MOBILE FUNCTION
 //---------------------------------------------------------------
