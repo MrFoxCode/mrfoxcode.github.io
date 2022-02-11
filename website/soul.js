@@ -74,10 +74,20 @@ contactHref.addEventListener('click', () => {
 //-----------------------------------------------------------------
 const langButton = document.querySelector('.changeLang button');
 const selectLang = document.querySelector('.selectedLang');
+const blankClick = document.querySelector('main');
 
-//Change Language to Portuguese
-langButton.addEventListener('click', ()=>{
-  selectLang.classList.toggle('selectedLang-active');
+  //OPEN THE LANGUAGE LIST OPTION
+  langButton.addEventListener('click', ()=>{
+  selectLang.classList.toggle('selectedLang-active'); 
+  });
+
+  //DISABLE LIST IS CLICK IS OUTSIDE OF NAVBAR OR BUTTON
+  blankClick.addEventListener('click', ()=>{
+    if(selectLang.classList.contains('selectedLang-active')){
+       selectLang.classList.toggle('selectedLang-active');  
+    }else if(!selectLang.classList.contains('selectedLang-active')){
+      return;
+    }
 });
 
 //-----------------------------------------------------------------

@@ -100,11 +100,14 @@ nav{
 
 .selectedLang ul li{
     border-radius: 0.5em;
-    padding: 0.5em;
+    padding: 0.5rem;
     background-color: gray;
     list-style: none;
     flex-direction: column;
-    cursor: pointer;    
+    cursor: pointer;
+    display: flex;    
+    align-items: center;
+    text-align: center; 
 }
 
 .selectedLang ul li a{
@@ -118,9 +121,6 @@ nav{
 .selectedLang ul li:hover{
     background-color: rgb(94, 94, 94);
 }
-
-
-
 
 .nav-links{
     top: 11.5px;
@@ -146,9 +146,11 @@ nav{
 color:silver;
 }
 
-.nav-title h1{
+.nav-title h1{   
+    position: relative;
+    display: flex;
     align-items: center;
-    margin-left: 50vh;    
+    left: 200%;    
     font-weight: bold; 
     font-size: 20px;   
     color: white;
@@ -871,7 +873,7 @@ color:silver;
         }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:580px){
     body{
     overflow-x: hidden;
     }
