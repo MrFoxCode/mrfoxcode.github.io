@@ -86,7 +86,7 @@ const blankClick = document.querySelector('main');
     if(selectLang.classList.contains('selectedLang-active')){
        selectLang.classList.toggle('selectedLang-active');  
     }else if(!selectLang.classList.contains('selectedLang-active')){
-      return;
+     //Do nothing
     }
 });
 
