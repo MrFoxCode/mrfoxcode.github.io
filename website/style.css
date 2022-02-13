@@ -253,7 +253,7 @@ color:silver;
 .container-main-textside{
     padding: 5%;
     position: relative;
-    height:40%;   
+    height:41%;   
     color: white;  
     background:rgb(65, 65, 65, 0.7);
     transform: translateX(100%);
@@ -270,7 +270,7 @@ color:silver;
 .container-main-textside2{    
     padding: 5%;
     position: relative;
-    height:35%;   
+    height:34%;   
     color: white;  
     background:rgb(65, 65, 65, 0.7);
     transform: translateX(-100%);

@@ -4,7 +4,6 @@
 //DARK THEME BUTTON
 function changeDark(){
     document.body.classList.toggle('dark');
-
 }
 
 //go back to top once the page is refreshed 
