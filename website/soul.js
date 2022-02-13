@@ -7,11 +7,9 @@ function changeDark(){
 }
 
 //go back to top once the page is refreshed 
-window.onbeforeunload = function (){
-  
+window.onbeforeunload = function (){  
   var topOfThePage = document.getElementById('home');  
-  topOfThePage.scrollIntoView();
-  
+  topOfThePage.scrollIntoView();  
  //window.scrollTo(0,0);
   }
     
@@ -178,9 +176,7 @@ function navSlide(){
       }
   });
 
-
   burger.classList.toggle('toggle');    
-
 
 });
   

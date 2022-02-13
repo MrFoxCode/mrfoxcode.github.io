@@ -99,6 +99,7 @@ color:silver;
     color: white;
     text-transform: uppercase;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 /* ------- CHANGE LANGUAGE BUTTON OPTIONS --------*/
 .changeLang{
@@ -176,8 +177,8 @@ color:silver;
 /*--------- HOME- SECTION ---------------*/
 .container-home{
     background-image: url("images/Landscape_.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: top;  
     height: 120vh;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -196,9 +197,9 @@ color:silver;
 }
 
 .dark .container-home{
-    background-image: url("https://p1.pxfuel.com/preview/87/993/113/dark-night-sky-mountain.jpg");
-    background-position: center;
-    background-size: 100%;
+    background-image: url('images/nightsky/ji-pak-ydzQjrkdko0-unsplash.jpg');
+    background-position: top;
+    background-size: cover;
 }
 .container-home h1{
     opacity: 0;
@@ -250,6 +251,12 @@ color:silver;
    /* background: linear-gradient(rgba(200, 200, 200, 1), rgb(104, 104, 104)); */   
     height:280vh;
 }
+
+.dark .container-main-bg{
+    background-image: url("images/nightsky/lorenzo-castagnone-45o2z4CwioA-unsplash.jpg");
+    background-size: cover; 
+}
+
 .container-main-textside{
     padding: 5%;
     position: relative;
@@ -335,7 +342,7 @@ color:silver;
 
 
 .dark .container-main{
-    background-color: rgb(41, 41, 41);
+    background-color: rgb(33, 33, 33, 0.9);
 }
 .profile-pic-set{
     display: flex;
@@ -594,16 +601,16 @@ color:silver;
 .container-projects{
     position: relative;   
     font-family: 'Poppins', sans-serif;
-    background-image: url("images/Landscape_.jpg");
-    background-size: 150%;
-    background-position: bottom;
+    background-image: url("images/nightsky/davide-goldin-JIN0uKc2kl8-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 230vh;
 }
 
 .dark .container-projects{
-    background-image: url("images/snow_house_quiet_night_the_stars_the_beautiful_scenery_alone.jpg");
-    background-size: 200%;
+    background-image: url("images/nightsky/marcus-dietachmair-eHww0UQjDIk-unsplash.jpg");
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
 }
@@ -853,8 +860,15 @@ color:silver;
     align-items: center;    
     flex-direction: column;
     background-image: url("images/Landscape_.jpg");
+    background-size: fill;
     background-position: center;
     height: 120vh;
+}
+
+.dark .container-contact{
+    background-image: url("images/nightsky/guzman-barquin-Qd688l1yDOI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .contact-window{
