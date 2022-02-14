@@ -920,15 +920,18 @@ color:silver;
 }
 
 .changeLang{
-    right: 19%;
+    right: 15%;
 }
 
 .changeLang img{
-    width: 2px;
+    margin-right: 3px;
+    border-radius: 2px;
+    width: 15px;
+    height: 10px;
 }
 
 .selectedLang{
-    right: 13%;
+    right: 10%;
 }
 
 .nav-title h1{
@@ -964,8 +967,95 @@ color:silver;
     .nav-links li{
         opacity: 0%;
     }
-   
+
+.container-home h1{
+    font-size: 50px;
 }
+
+.container-home h2{
+    font-size: 15px;
+}
+
+.container-main-bg{
+    height: 480vh;
+}
+.container-main-textside{
+    height: 33%;
+}
+
+.container-main-textside2{
+    height: 30%;
+}
+.My-Journey{
+    position: relative;
+    justify-content: center;
+    left: 20%;
+    top: -3%;
+}
+.Who-I-Am{
+    top: 4%;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    position: relative;
+    text-align: center;
+    left: 25%;
+    margin-bottom: 5%;
+}
+
+.profile-pic{   
+    width: 50%;
+}
+
+.about-text{
+top: 2%;
+position: relative;
+display: flex;
+padding: 0;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+
+.about-text2{
+    position: relative;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-main{
+    height: 150vh;
+    
+}
+.skill-bar{
+    top:15%;
+    left: 10%;
+}
+
+.software-bar{
+    top: 52%;
+    left: 10%;
+}
+
+.bar1, .bar2, .bar3, .bar4, .bar5, .bar6{
+width: 320px;
+}
+
+/*PROGRESS BAR ANIMATION*/
+@keyframes progressBar {
+    from{
+        
+        width: 0px;
+    }to{
+       
+        width: 320px;
+    }
+}
+
+
 /* reveal the nav bar at the right side*/
 .nav-active{
     transform: translateX(0%);
@@ -993,3 +1083,4 @@ color:silver;
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
+}

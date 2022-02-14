@@ -12,6 +12,13 @@ window.onbeforeunload = function (){
   topOfThePage.scrollIntoView();  
  //window.scrollTo(0,0);
   }
+
+  //refresh page by clicking on title
+  let titleArea = document.querySelector('.nav-title h1');
+  titleArea.addEventListener('click',()=>{
+  //refresh page
+  location.reload();    
+  });
     
  //go to contact section by clcking
   function letsTalk(){
