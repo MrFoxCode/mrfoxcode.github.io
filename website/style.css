@@ -977,29 +977,37 @@ color:silver;
 }
 
 .container-main-bg{
-    height: 480vh;
+    height: 350vh;
 }
 .container-main-textside{
-    height: 33%;
+    height: 38%;
+   
+  
 }
 
 .container-main-textside2{
     height: 30%;
+    
+  
 }
 .My-Journey{
+    display: flex;
     position: relative;
     justify-content: center;
-    left: 20%;
+    align-items: center;
+    text-align: center;
+    width: 75%;
     top: -3%;
 }
 .Who-I-Am{
+    width: 75%;
     top: 4%;
     justify-content: center;
     align-items: center;
     display:flex;
     position: relative;
     text-align: center;
-    left: 25%;
+    /*left: 25%;*/
     margin-bottom: 5%;
 }
 
@@ -1008,36 +1016,47 @@ color:silver;
 }
 
 .about-text{
-top: 2%;
+margin: 1%;
+top: 3%;
 position: relative;
-display: flex;
-padding: 0;
+
+padding: 0%;
 justify-content: center;
 flex-direction: column;
 align-items: center;
 }
 
 .about-text2{
+    margin: 1%;
     position: relative;
     display: flex;
-    padding: 0;
+    padding: 0%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
 .container-main{
-    height: 150vh;
+    height: 115vh;
+   
     
 }
 .skill-bar{
-    top:15%;
-    left: 10%;
+    display: flex;
+    top:20%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
 }
 
 .software-bar{
-    top: 52%;
     left: 10%;
+    top: 60%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .bar1, .bar2, .bar3, .bar4, .bar5, .bar6{
@@ -1055,6 +1074,67 @@ width: 320px;
     }
 }
 
+.container-projects{
+    height: 420vh;
+}
+
+.alura-project-title{
+     top: 3%;
+}
+.alura-project-title h1{
+font-size: 30px;
+}
+.alura-project-title h3{
+    font-size: 13px;
+}
+
+.alura-projects{
+    top: 5%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.other-projects{
+    display: flex;
+    position: relative;
+    top: 8%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.other-projects-tittle {
+    padding: 1em;
+}
+
+.other-projects-tittle h1{
+    font-size: 35px;
+}
+.other-projects-tittle h3{
+
+    font-size: 15px;
+}
+
+.other-projects{
+    flex-direction: column;
+}
+
+.cida{
+    width: 350px;
+    height: 550px;
+}
+.cida img{
+    width: 100px;
+   
+}
+.contact-window h2{
+    font-size: 20px;
+   }
+   
+
+.contact-window h1{
+ font-size: 23px;
+}
 
 /* reveal the nav bar at the right side*/
 .nav-active{

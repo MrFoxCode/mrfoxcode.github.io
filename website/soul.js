@@ -163,6 +163,7 @@ if(checkScreen > getScreenTop6){
 //---------------------------------------------------------------
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
 
+
 // Nav Slide Behavior
 //const navSlide=()=>{}
 function navSlide(){
