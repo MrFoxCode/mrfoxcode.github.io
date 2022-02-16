@@ -26,7 +26,7 @@ window.onbeforeunload = function (){
     let getContactId = document.getElementById('contact');
 
     buttonTalk.addEventListener('click',()=>{
-     getContactId.scrollIntoView({behavior: "smooth"});  
+    getContactId.scrollIntoView({behavior: "smooth"});  
     }); 
   }
   letsTalk();
@@ -58,19 +58,75 @@ function scrollTo(element) {
 //Scroll to Home Section
 homeHref.addEventListener('click', () => {
   scrollTo(homeSection);
+
+  //BRING BACK THE NAV BAR 
+  nav.classList.toggle('nav-active');
+  //Animate Nav-Links li
+  navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+         link.style.animation ="";
+      }else{
+         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.1}s`   
+      }
+  });
+
+  burger.classList.toggle('toggle');   
+
 });
 //scroll to About Section
 aboutHref.addEventListener('click', () => {
   scrollTo(aboutSection);
+
+  //BRING BACK THE NAV BAR 
+  nav.classList.toggle('nav-active');
+  //Animate Nav-Links li
+  navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+         link.style.animation ="";
+      }else{
+         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.1}s`   
+      }
+  });
+
+  burger.classList.toggle('toggle');
+
 });
 //scroll to Projects Section
 projectHref.addEventListener('click', () => {
   scrollTo(projectSection);
+
+  //BRING BACK THE NAV BAR 
+  nav.classList.toggle('nav-active');
+  //Animate Nav-Links li
+  navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+         link.style.animation ="";
+      }else{
+         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.1}s`   
+      }
+  });
+
+  burger.classList.toggle('toggle');
+
 });
 
 //scroll to Contact Section
 contactHref.addEventListener('click', () => {
   scrollTo(contactSection);
+
+  //BRING BACK THE NAV BAR 
+  nav.classList.toggle('nav-active');
+  //Animate Nav-Links li
+  navLinks.forEach((link, index)=>{
+      if(link.style.animation){
+         link.style.animation ="";
+      }else{
+         link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.1}s`   
+      }
+  });
+
+  burger.classList.toggle('toggle');
+
 });
 
 //-----------------------------------------------------------------
@@ -162,15 +218,12 @@ if(checkScreen > getScreenTop6){
 //                     MOBILE FUNCTION
 //---------------------------------------------------------------
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
-
-
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
 // Nav Slide Behavior
 //const navSlide=()=>{}
-function navSlide(){
-  const burger = document.querySelector('.burger');
-  const nav = document.querySelector('.nav-links');
-  const navLinks = document.querySelectorAll('.nav-links li');
-
+function navSlide(){ 
   //toggle sidebar (nav)
   burger.addEventListener('click',()=>{
   nav.classList.toggle('nav-active');
