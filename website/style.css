@@ -1169,8 +1169,7 @@ font-size: 30px;
 
 /* reveal the nav bar at the right side*/
 .nav-active{
-    transform: translateX(0%);
-    
+    transform: translateX(0%);    
 }
 
 @keyframes navLinkFade {
