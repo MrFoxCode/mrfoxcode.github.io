@@ -93,6 +93,7 @@ aboutHref.addEventListener('click', () => {
 projectHref.addEventListener('click', () => {
   scrollTo(projectSection);
 
+  
   //BRING BACK THE NAV BAR 
   nav.classList.toggle('nav-active');
   //Animate Nav-Links li
