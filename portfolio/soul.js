@@ -131,24 +131,29 @@ contactHref.addEventListener('click', () => {
 //-----------------------------------------------------------------
 //                  CHANGE LANGUAGE FUNCTION
 //-----------------------------------------------------------------
-const langButton = document.querySelector('.changeLang button');
-const selectLang = document.querySelector('.selectedLang');
+// button to toggle the list
+const englishButton = document.getElementById('englishButton');
+const listLangShow = document.getElementById('languageList');
+
+//blank space to detect click not in the button
 const blankClick = document.querySelector('main');
-
-  //OPEN THE LANGUAGE LIST OPTION
-  langButton.addEventListener('click', ()=>{
-  selectLang.classList.toggle('selectedLang-active'); 
+//
+// ACTIVE LANGUAGE BUTTON IN ENGLISH VERSION
+//
+//OPEN THE LANGUAGE LIST OPTION
+  englishButton.addEventListener('click', ()=>{
+  listLangShow.classList.toggle('langList-active'); 
   });
-
   //DISABLE LIST IS CLICK IS OUTSIDE OF NAVBAR OR BUTTON
   blankClick.addEventListener('click', ()=>{
-    if(selectLang.classList.contains('selectedLang-active')){
-       selectLang.classList.toggle('selectedLang-active');  
-    }else if(!selectLang.classList.contains('selectedLang-active')){
+    if(listLangShow.classList.contains('langList-active')){
+       listLangShow.classList.toggle('langList-active');  
+    }else if(!listLangShow.classList.contains('langList-active')){
      //Do nothing
     }
 });
 
+//---------------------------------------------------------------------
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
 //-----------------------------------------------------------------
