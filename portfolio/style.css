@@ -205,8 +205,8 @@ color:silver;
 
 .selectedLang_br{
     border-radius: 0.5em;    
-    top: 3em;
-    display: none;    
+    top: 3em; 
+    display: none;  
     right: 3.3%;
     position: absolute;
     background-color: gray;
@@ -1028,8 +1028,9 @@ font-weight: 500;
     right: 10%;
 }
 .selectedLang_br{
-    right: 20%;
+    right: 12%;      
 }
+
 
 .nav-title h1{
     left: -25%;

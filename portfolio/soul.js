@@ -137,13 +137,18 @@ const listLangShow = document.getElementById('languageList');
 
 //blank space to detect click not in the button
 const blankClick = document.querySelector('main');
+
+
 //
-// ACTIVE LANGUAGE BUTTON IN ENGLISH VERSION
+// ACTIVE LANGUAGE BUTTON 
 //
+
 //OPEN THE LANGUAGE LIST OPTION
   englishButton.addEventListener('click', ()=>{
-  listLangShow.classList.toggle('langList-active'); 
+  listLangShow.classList.toggle('langList-active');
   });
+
+  
   //DISABLE LIST IS CLICK IS OUTSIDE OF NAVBAR OR BUTTON
   blankClick.addEventListener('click', ()=>{
     if(listLangShow.classList.contains('langList-active')){
@@ -153,7 +158,6 @@ const blankClick = document.querySelector('main');
     }
 });
 
-//---------------------------------------------------------------------
 //-----------------------------------------------------------------
 //                  CHECK VIEWPORT REVEAL
 //-----------------------------------------------------------------
