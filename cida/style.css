@@ -1,0 +1,303 @@
+*{   
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;        
+}
+
+body{
+background-color: rgb(54, 54, 54);
+}
+
+nav{ 
+    display: flex;   
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background:rgb(26, 26, 26);
+    align-items: center; 
+    z-index: 3;   
+}
+
+/*============ DIV TITLE IN NAV BAR =============*/
+.cida-title{
+    display:flex;
+    position: relative;
+    left: 4%;
+    cursor: pointer;
+}
+
+.cida-title h1{
+    color: white;
+}
+
+.cida-title h4{
+    left: 3%;
+    font-weight: 300;
+    color:rgb(163, 163, 163);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+/*============ DIV LOGO IN NAV-BAR =============*/
+.navbar-logo{
+    display: flex;
+    position: relative;
+    left: 3%;
+    align-items: center;
+}
+.navbar-logo img{
+    cursor: pointer;
+    width: 40px;    
+}
+
+/*============ DIV NAV-BAR =============*/
+
+.nav-options{
+    display: flex;
+    position: absolute;
+    right: 20%;    
+    align-items: center;
+}
+
+/*============ NAV BAR LINKS =============*/
+.nav-links{ 
+    list-style: none;
+    display: flex;
+    position: relative;        
+}
+.nav-links a{ 
+    margin-left: 60px;
+    margin-right: 60px;    
+    display: flex;   
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#nav-home:hover{
+color: rgb(173, 255, 47);
+}
+
+#nav-about:hover{
+    color: rgb(225, 103, 255);
+}
+
+#nav-commands:hover{
+    color: rgb(72, 207, 224);
+}
+
+#nav-creator:hover{
+    color: rgb(253, 233, 51);
+}
+
+/*============ DIV BUTTONS =============*/
+
+.login-buttons{
+    display: flex;
+    position: absolute;
+    float: right;
+    right: 2%;    
+}
+
+/*=========== SIGN IN BUTOON ===========*/
+#signin{
+    border: 0;
+    padding: 5px 10px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    margin-right: 0.5em; 
+    cursor: pointer; 
+}
+#signin:hover{
+    color:rgb(255, 194, 64);
+}
+#signin:active{
+    color:rgb(212, 163, 55);
+}
+
+/*=========== LOGIN BUTTON ===========*/
+
+#login{
+    padding: 6px 16px;
+    background: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 1em;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+#login:hover{
+    background: rgb(75, 110, 177);
+    color: rgb(255, 255, 255);}
+
+#login:active{
+    background: rgb(49, 73, 117);
+}
+/*============================================*/
+
+section{
+height: 100vh;
+background:rgb(29, 31, 35);
+}
+
+/*=============== HOME SECTION ================*/
+
+.home{
+background-image: url('images/background2.png');
+background-size: cover;
+}
+
+/*=============== TEXT HOME ================*/
+
+.intro-home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    top: 40%;
+}
+.intro-home h1{
+    color: white;
+    font-size: 80px;
+    font-weight: 600;
+}
+.intro-home h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: white;
+}
+
+/*=============== ABOUT SECTION ================*/
+.about-cida{
+    background-image: url('images/background2.png');
+    background-size: cover;
+}
+.cida-image{
+    top: 35%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    
+}
+.cida-image img{
+width: 150px;
+}
+
+/*=============== ABOUT CIDA TEXTS ================*/
+
+.about-container{
+    top: 15%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-container h1{
+    color:white;
+    font-size: 50px;
+}
+.about-container p{
+    padding-left: 15%;    
+    padding-right: 15%;
+    margin-top: 2%;
+    color: white;
+    font-size: 20px;
+}
+
+/*=============== COMMANDS SECTION ================*/
+
+.commands{
+    background-image: url('images/background2.png');
+}
+
+.gif-screen{
+   width: 50%;
+   height: 450px;
+   background: black;
+   display: flex;
+   position: relative;
+   top: 18%;
+   right: 4%;
+   float: right;   
+}
+
+.commands-container{
+    left: 3%;
+    top: 15%;
+    display: flex;
+    position: relative;
+    float: left;
+    flex-direction: column;
+    width: 50%;
+}
+
+.tittle-and-command{
+display: flex;
+position: relative;
+align-items: center;
+text-align: center;
+margin-top: 1em;
+}
+
+.tittle-and-command h3{
+    display: flex;
+    position: relative;
+    margin-top: 2%;   
+    margin-left: 1%;    
+    font-weight: 500;
+    color: white;
+}
+
+.commands-container h1{
+    margin-top: 0.5em;
+    color: white;
+}
+
+.commands-container p{
+    margin-top: 0.2em;
+    padding-left: 2%;
+    padding-right: 20%;
+    color: white;
+    font-weight: 500;
+}
+
+/*=============== COMMANDS HOVER ==============*/
+.cpokedex h1:hover{
+ color: rgb(255, 87, 87);
+ cursor: pointer;
+}
+
+.cmute h1:hover{
+    color: rgb(255, 87, 87);
+    cursor: pointer;
+}
+
+.ckick h1:hover{
+    color: rgb(255, 87, 87);
+    cursor: pointer;
+}
+
+.cban h1:hover{
+    color: rgb(255, 87, 87);
+    cursor: pointer;
+}
+
+/*=============================================*/
+
+
+.creator{
+    background-image: url('images/background2.png');
+    background-size: cover;
+}
