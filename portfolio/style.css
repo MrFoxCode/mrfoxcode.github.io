@@ -64,7 +64,7 @@ nav{
 }
 
 .nav-links{
-    top: 11.5px;
+    top: 11.5px; 
     right: 200px;  
     position: absolute;     
     display:flex;
