@@ -1084,7 +1084,7 @@ font-weight: 500;
 }
 
 .container-main-textside2{
-    height: 31%;
+    height: 35%;
 
 }
 
@@ -1139,13 +1139,13 @@ align-items: center;
 }
 
 .container-main{
-    height: 115vh;
+    height: 150vh;
    
     
 }
 .skill-bar{
     display: flex;
-    top:20%;
+    top:14%;
     justify-content: center;
     align-items: center;
     width: 80%;
@@ -1154,7 +1154,7 @@ align-items: center;
 
 .software-bar{
     left: 10%;
-    top: 60%;
+    top: 37%;
     width: 80%;
     justify-content: center;
     align-items: center;
