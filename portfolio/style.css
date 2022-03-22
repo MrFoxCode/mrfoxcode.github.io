@@ -759,7 +759,7 @@ color:silver;
     
 }
 .barProgress7{
-    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 95%, rgba(92, 92, 92, 1) 95%); 
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 20%, rgba(92, 92, 92, 1) 20%); 
     display:block;
     position: absolute;
     align-items: center;
@@ -780,7 +780,7 @@ color:silver;
 
 .barProgress8{
     margin-bottom: 5px;
-    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 60%, rgba(92, 92, 92, 1) 60%); 
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 20%, rgba(92, 92, 92, 1) 20%); 
     display:block;
     position: absolute;
     align-items: center;
@@ -804,7 +804,7 @@ color:silver;
 
 .barProgress9{
     margin-bottom: 5px;
-    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 70%, rgba(92, 92, 92, 1) 70%); 
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 20%, rgba(92, 92, 92, 1) 20%); 
     display:block;
     position: absolute;
     align-items: center;
@@ -1244,9 +1244,7 @@ font-weight: 500;
     .container-main-textside2{
         height: 28%;
     }
-
-    
-    
+        
     .skill-bar{
      left: 10%;
     }
@@ -1257,11 +1255,11 @@ font-weight: 500;
 
     .skill-bar2{
         left: 10%;
-       }
+    }
        
        .software-bar2{
            right: 10%;
-       }
+    }
     
 }
 

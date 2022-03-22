@@ -168,7 +168,6 @@ const blankArea = document.querySelector('main');
 const aboutcontainer2 = document.querySelector('.container-main-textside');
 const aboutcontainer3 = document.querySelector('.container-main-textside2');
 
-
 //BARS OVER THE GRAY BAR THAT ARE BEING ANIMATED.
 const getScreenSize = document.querySelector('.container-main-bg');
 const getProgressBar1 = document.querySelector('.barProgress1');
