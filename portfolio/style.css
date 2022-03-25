@@ -755,11 +755,9 @@ color:silver;
     width: 400px;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);  
-   
-    
 }
 .barProgress7{
-    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 20%, rgba(92, 92, 92, 1) 20%); 
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 10%, rgba(92, 92, 92, 1) 10%); 
     display:block;
     position: absolute;
     align-items: center;
@@ -777,10 +775,9 @@ color:silver;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
 }
-
 .barProgress8{
     margin-bottom: 5px;
-    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 20%, rgba(92, 92, 92, 1) 20%); 
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 10%, rgba(92, 92, 92, 1) 10%); 
     display:block;
     position: absolute;
     align-items: center;
@@ -800,18 +797,15 @@ color:silver;
     height: 13px;
     background: linear-gradient(90deg, rgba(193, 146, 76, 1) 0%, rgba(92, 92, 92, 1) 0%);
 }
-
-
 .barProgress9{
     margin-bottom: 5px;
-    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 20%, rgba(92, 92, 92, 1) 20%); 
+    background: linear-gradient(90deg, rgba(193, 146, 76, 1) 10%, rgba(92, 92, 92, 1) 10%); 
     display:block;
     position: absolute;
     align-items: center;
     width: 0px;
     height: 13px;
     top: 0%;
-   
 }
 
 

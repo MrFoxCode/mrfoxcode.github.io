@@ -138,7 +138,6 @@ const listLangShow = document.getElementById('languageList');
 //blank space to detect click not in the button
 const blankClick = document.querySelector('main');
 
-
 //
 // ACTIVE LANGUAGE BUTTON 
 //
