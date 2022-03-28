@@ -167,21 +167,8 @@ const blankArea = document.querySelector('main');
 const aboutcontainer2 = document.querySelector('.container-main-textside');
 const aboutcontainer3 = document.querySelector('.container-main-textside2');
 
-//BARS OVER THE GRAY BAR THAT ARE BEING ANIMATED.
+//GET THE WHOLE SECTION IN ABOUT
 const getScreenSize = document.querySelector('.container-main-bg');
-const getProgressBar1 = document.querySelector('.barProgress1');
-const getProgressBar2 = document.querySelector('.barProgress2');
-const getProgressBar3 = document.querySelector('.barProgress3');
-const getProgressBar4 = document.querySelector('.barProgress4');
-const getProgressBar5 = document.querySelector('.barProgress5');
-const getProgressBar6 = document.querySelector('.barProgress6');
-const getProgressBar7 = document.querySelector('.barProgress7');
-const getProgressBar8 = document.querySelector('.barProgress8');
-const getProgressBar9 = document.querySelector('.barProgress9');
-const getProgressBar10 = document.querySelector('.barProgress10');
-const getProgressBar11 = document.querySelector('.barProgress11');
-const getProgressBar12 = document.querySelector('.barProgress12');
-
 
 //CHECK IF USER IS VIEWING ON SCREEN WHERE "WHO I AM" AND "MY JOURNEY" IS LOCATED.
   document.addEventListener('scroll', function(){
@@ -200,23 +187,46 @@ const getProgressBar12 = document.querySelector('.barProgress12');
 
 });
 
+//BARS OVER THE GRAY BAR THAT ARE BEING ANIMATED.
+const getProgressBar1 = document.querySelector('.barProgress1');
+const getProgressBar2 = document.querySelector('.barProgress2');
+const getProgressBar3 = document.querySelector('.barProgress3');
+
+const getProgressBar4 = document.querySelector('.barProgress4');
+const getProgressBar5 = document.querySelector('.barProgress5');
+const getProgressBar6 = document.querySelector('.barProgress6');
+
+const getProgressBar7 = document.querySelector('.barProgress7');
+const getProgressBar8 = document.querySelector('.barProgress8');
+const getProgressBar9 = document.querySelector('.barProgress9');
+
+const getProgressBar10 = document.querySelector('.barProgress10');
+const getProgressBar11 = document.querySelector('.barProgress11');
+const getProgressBar12 = document.querySelector('.barProgress12');
+
+
 //check if progress Bars in .Skill-Bar is on the viewport
 document.addEventListener('scroll', function(){
 const checkScreen = document.documentElement.clientHeight;
+
 const getScreenTop = getProgressBar1.getBoundingClientRect().y;
 const getScreenTop2 = getProgressBar2.getBoundingClientRect().y;
 const getScreenTop3 = getProgressBar3.getBoundingClientRect().y;
+
 const getScreenTop4 = getProgressBar4.getBoundingClientRect().y;
 const getScreenTop5 = getProgressBar5.getBoundingClientRect().y;
 const getScreenTop6 = getProgressBar6.getBoundingClientRect().y;
+
 const getScreenTop7 = getProgressBar7.getBoundingClientRect().y;
 const getScreenTop8 = getProgressBar8.getBoundingClientRect().y;
 const getScreenTop9 = getProgressBar9.getBoundingClientRect().y;
+
 const getScreenTop10 = getProgressBar10.getBoundingClientRect().y;
 const getScreenTop11 = getProgressBar11.getBoundingClientRect().y;
 const getScreenTop12 = getProgressBar12.getBoundingClientRect().y;
 
 
+//condition to animate the bars
 if(checkScreen > getScreenTop){
   getProgressBar1.style.animation = 'progressBar 2s ease 0.5s forwards';
 }
@@ -252,7 +262,9 @@ if(checkScreen > getScreenTop11){
 }
 if(checkScreen > getScreenTop12){
   getProgressBar12.style.animation = 'progressBar 2s ease 0.5s forwards';
-}      
+} 
+
+
 });
 
 //---------------------------------------------------------------
