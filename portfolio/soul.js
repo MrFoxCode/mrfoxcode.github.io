@@ -205,64 +205,27 @@ const getProgressBar11 = document.querySelector('.barProgress11');
 const getProgressBar12 = document.querySelector('.barProgress12');
 
 
+const allBars = [getProgressBar1, getProgressBar2, getProgressBar3,
+getProgressBar4, getProgressBar5, getProgressBar6, getProgressBar7, 
+getProgressBar8, getProgressBar9, getProgressBar10,getProgressBar11,getProgressBar12];
+
+
 //check if progress Bars in .Skill-Bar is on the viewport
 document.addEventListener('scroll', function(){
+  
 const checkScreen = document.documentElement.clientHeight;
 
-const getScreenTop = getProgressBar1.getBoundingClientRect().y;
-const getScreenTop2 = getProgressBar2.getBoundingClientRect().y;
-const getScreenTop3 = getProgressBar3.getBoundingClientRect().y;
+//CHECK EVERY SINGLE CSS ELEMENT INSIDE THE ARRAY
+for (i=0; i<allBars.length; i++){
+  const getScreenTop = allBars[i].getBoundingClientRect().y;  
 
-const getScreenTop4 = getProgressBar4.getBoundingClientRect().y;
-const getScreenTop5 = getProgressBar5.getBoundingClientRect().y;
-const getScreenTop6 = getProgressBar6.getBoundingClientRect().y;
+  //ACTIVE BAR ANIMATION BASED ON THE VIEWPORT
+  if(checkScreen > getScreenTop){
+    allBars[i].style.animation = 'progressBar 2s ease 0.5s forwards';
 
-const getScreenTop7 = getProgressBar7.getBoundingClientRect().y;
-const getScreenTop8 = getProgressBar8.getBoundingClientRect().y;
-const getScreenTop9 = getProgressBar9.getBoundingClientRect().y;
-
-const getScreenTop10 = getProgressBar10.getBoundingClientRect().y;
-const getScreenTop11 = getProgressBar11.getBoundingClientRect().y;
-const getScreenTop12 = getProgressBar12.getBoundingClientRect().y;
-
-
-//condition to animate the bars
-if(checkScreen > getScreenTop){
-  getProgressBar1.style.animation = 'progressBar 2s ease 0.5s forwards';
+  }
+  
 }
-if(checkScreen > getScreenTop2){
-  getProgressBar2.style.animation = 'progressBar 2s ease 0.5s forwards';
-} 
-if(checkScreen > getScreenTop3){
-  getProgressBar3.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop4){
-  getProgressBar4.style.animation = 'progressBar 2s ease 0.5s forwards';
-}   
-if(checkScreen > getScreenTop5){
-  getProgressBar5.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop6){
-  getProgressBar6.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop7){
-  getProgressBar7.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop8){
-  getProgressBar8.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop9){
-  getProgressBar9.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop10){
-  getProgressBar10.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop11){
-  getProgressBar11.style.animation = 'progressBar 2s ease 0.5s forwards';
-}
-if(checkScreen > getScreenTop12){
-  getProgressBar12.style.animation = 'progressBar 2s ease 0.5s forwards';
-} 
 
 
 });
