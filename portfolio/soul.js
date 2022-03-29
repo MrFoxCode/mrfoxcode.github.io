@@ -204,7 +204,6 @@ const getProgressBar10 = document.querySelector('.barProgress10');
 const getProgressBar11 = document.querySelector('.barProgress11');
 const getProgressBar12 = document.querySelector('.barProgress12');
 
-
 const allBars = [getProgressBar1, getProgressBar2, getProgressBar3,
 getProgressBar4, getProgressBar5, getProgressBar6, getProgressBar7, 
 getProgressBar8, getProgressBar9, getProgressBar10,getProgressBar11,getProgressBar12];
@@ -222,16 +221,14 @@ for (i=0; i<allBars.length; i++){
   //ACTIVE BAR ANIMATION BASED ON THE VIEWPORT
   if(checkScreen > getScreenTop){
     allBars[i].style.animation = 'progressBar 2s ease 0.5s forwards';
-
-  }
+    }
   
-}
-
+  }
 
 });
 
 //---------------------------------------------------------------
-//                     MOBILE FUNCTION
+//                      MOBILE FUNCTION
 //---------------------------------------------------------------
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
 const burger = document.querySelector('.burger');

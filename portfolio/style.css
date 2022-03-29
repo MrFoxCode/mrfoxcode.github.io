@@ -99,6 +99,8 @@ color:silver;
     letter-spacing: 5px;
     cursor: pointer;
 }
+
+
 /* ------- CHANGE LANGUAGE BUTTON OPTIONS --------*/
 .changeLang{
     display: flex;    
