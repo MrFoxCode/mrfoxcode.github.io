@@ -1222,8 +1222,28 @@ font-weight: 500;
  }
 .contact-window h1{
    font-size: 200%;       
-    color: white;       
+    color: white;        
 }
+
+
+
+.socials-logos{
+   margin-top: 20%;
+   display: flex;
+   position: absolute;
+   padding-left: 20%;
+   padding-right: 20%;
+
+}
+
+.socials-logos img{
+    width: 28%;
+    
+}
+.socials-logos img:hover{
+    width: 30%;
+}
+
 
 /*RESPONSIVE OPTIONS*/
 @media screen and (max-width: 1280px){
@@ -1548,6 +1568,20 @@ font-size: 30px;
 .contact-window h1{
  font-size: 23px;
 }
+
+.socials-logos{
+    margin-top: 60%;
+
+}
+ 
+ .socials-logos img{
+     width: 90%;
+     
+ }
+ .socials-logos img:hover{
+     width: 92%;
+ }
+
 
 /* reveal the nav bar at the right side*/
 .nav-active{

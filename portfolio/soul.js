@@ -230,6 +230,7 @@ for (i=0; i<allBars.length; i++){
 //---------------------------------------------------------------
 //                      MOBILE FUNCTION
 //---------------------------------------------------------------
+
 // --- MOBILE MODE // RESPONSIVE NAV BAR 
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
