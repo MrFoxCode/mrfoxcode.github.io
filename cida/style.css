@@ -216,20 +216,28 @@ width: 150px;
     font-size: 20px;
 }
 
+.linked-image{
+margin-top: 6%;
+}
+.linked-image img{
+    width: 75%;
+}
+
 /*=============== COMMANDS SECTION ================*/
 
 .commands{
     background-image: url('images/background2.png');
+    
 }
 
 .gif-screen{
-   width: 50%;
-   height: 450px;
+   width: 800px;
+   height: 480px;
    background: black;
    display: flex;
    position: relative;
    top: 18%;
-   right: 4%;
+   right: 3%;
    float: right;   
 }
 
@@ -240,7 +248,7 @@ width: 150px;
     position: relative;
     float: left;
     flex-direction: column;
-    width: 50%;
+    width: 49%;
 }
 
 .tittle-and-command{
@@ -300,4 +308,103 @@ margin-top: 1em;
 .creator{
     background-image: url('images/background2.png');
     background-size: cover;
+}
+
+.creator h1{
+    display: flex;
+    position: relative;
+    margin-bottom: 1em;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+    top: 20%; 
+}
+
+
+.creator-container{
+    display: flex;
+    position: relative;   
+    top: 25%;   
+    text-align: center;
+    align-items: center; 
+    justify-content: center;
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 8%;
+    padding-right: 10%;
+    border-radius: 2em;
+}
+
+.creator-picture img{    
+    width: 80%;
+    border-radius: 50%;    
+}
+
+.creator-text-container{
+    color:white;
+    position: relative; 
+}
+
+.creator-text-container h3{
+    display: flex;
+    font-size: 30px;    
+    padding-left: 2%;
+    padding-right: 35%;
+}
+.creator-text-container h4{
+    display: flex;      
+    padding-left: 2%;
+    padding-right: 35%;
+    font-size: 20px;
+}
+
+.creator-text-container p{
+    text-align: left;
+    display: flex;
+    padding-left: 2%;   
+    margin-top: 1.5%;    
+}
+
+
+/*=============================================*/
+/*             RESPONSIVE MOBILE               */
+/*=============================================*/
+
+@media screen and (max-width: 1280px) {
+    .nav-links a{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+  
+  .commands-container{
+      width: 36%;
+  }
+
+  .tittle-and-command h3{
+      margin-top: 3.7%;
+  }
+
+  .gif-screen{
+    width: 800px;
+    height: 480px;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    html, body {
+        overflow-x:hidden 
+      } 
+
+
 }
