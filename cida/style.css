@@ -227,7 +227,7 @@ margin-top: 6%;
 
 .commands{
     background-image: url('images/background2.png');
-    
+        
 }
 
 .gif-screen{
@@ -239,6 +239,11 @@ margin-top: 6%;
    top: 18%;
    right: 3%;
    float: right;   
+   border-radius: 1em;
+}
+
+.gif-screen img{
+    border-radius: 1em;
 }
 
 .commands-container{
@@ -281,7 +286,40 @@ margin-top: 1em;
     font-weight: 500;
 }
 
+/*=============== IMAGES GIFS ==============*/
+
+/*=============== ACTIVE CLASS ==============*/
+
+.screen-active{
+    z-index: 3;
+}
+
+/*=============== GIFS ID ==============*/
+
+#pokedexgif{
+    display: block;
+    z-index: 2;
+    position: absolute;
+}
+#mutegif{
+    display: block;
+    z-index: 1;
+    position: absolute;
+}
+/*
+#kickgif{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+.bangif{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+}
+*/
 /*=============== COMMANDS HOVER ==============*/
+
 .cpokedex h1:hover{
  color: rgb(255, 87, 87);
  cursor: pointer;
