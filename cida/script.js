@@ -15,7 +15,7 @@ const commandsRef = document.getElementById('nav-commands');
 const creatorRef = document.getElementById('nav-creator');
 
 
-//FUNCTIONS 
+// FUNCTIONS
 
 
 //go back to top once the page is refreshed 
