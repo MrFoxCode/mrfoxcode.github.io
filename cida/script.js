@@ -53,50 +53,32 @@ creatorRef.addEventListener('click', ()=>{
 //====================================================
 //       CHANGE IMAGE IN COMMANDS SECTION
 //====================================================
-const pokedex = document.querySelector('.cpokedex h1');
-const mute = document.querySelector('.cmute h1');
+const pokedex = document.querySelector('.cpokedex h3');
+const mute = document.querySelector('.cmute h3');
+const kick = document.querySelector('.ckick h3');
+const ban = document.querySelector('.cban h3');
+const purge = document.querySelector('.cpurge h3');
 
-const muteID = document.getElementById('mutegif');
-
+let img = document.getElementById('pokedexgif');
 
 pokedex.addEventListener('click', ()=>{
-    let img = document.getElementById('pokedexgif');
-    let imageUrl = img.src;
     img.src = "/cida/images/gifs/pokedex.gif";
-    img.src = imageUrl;
 });
 
 mute.addEventListener('click', ()=>{
-    let img = document.getElementById('pokedexgif');
-    let imageUrl = img.src;
     img.src = "/cida/images/gifs/mute.gif";
-    img.src = imageUrl;
 });
 
-
-/*
-pokedex.addEventListener('click', ()=>{   
-    if(!pokedexID.classList.contains('screen-active')&&(muteID.classList.contains('screen-active')) ){
-    pokedexID.classList.add('screen-active');
-    muteID.classList.remove('screen-active');
-    }else if(pokedexID.classList.contains('screen-active')){
-    //nothing;
-    }else{
-        pokedexID.classList.add('screen-active');
-    }    
+kick.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/kick.gif";
 });
 
-mute.addEventListener('click', ()=>{   
-    if(!muteID.classList.contains('screen-active')&&(pokedexID.classList.contains('screen-active')) ){
-    muteID.classList.add('screen-active');
-    pokedexID.classList.remove('screen-active');
-    }else if(muteID.classList.contains('screen-active')){
-    //nothing;
-    }else{
-        muteID.classList.toggle('screen-active');
-        
-    }    
+ban.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/ban.gif";
 });
-*/
+
+purge.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/purge.gif";
+});
 
 //====================================================

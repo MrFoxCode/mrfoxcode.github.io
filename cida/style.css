@@ -1,40 +1,40 @@
-*{   
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Cabin', sans-serif;        
+    font-family: 'Cabin', sans-serif;
 }
 
-body{
-background-color: rgb(54, 54, 54);
+body {
+    background-color: rgb(54, 54, 54);
 }
 
-nav{ 
-    display: flex;   
+nav {
+    display: flex;
     position: fixed;
     height: 60px;
     width: 100%;
-    background:rgb(26, 26, 26);
-    align-items: center; 
-    z-index: 3;   
+    background: rgb(26, 26, 26);
+    align-items: center;
+    z-index: 3;
 }
 
 /*============ DIV TITLE IN NAV BAR =============*/
-.cida-title{
-    display:flex;
+.cida-title {
+    display: flex;
     position: relative;
     left: 4%;
     cursor: pointer;
 }
 
-.cida-title h1{
+.cida-title h1 {
     color: white;
 }
 
-.cida-title h4{
+.cida-title h4 {
     left: 3%;
     font-weight: 300;
-    color:rgb(163, 163, 163);
+    color: rgb(163, 163, 163);
     align-items: center;
     justify-content: center;
     display: flex;
@@ -42,36 +42,38 @@ nav{
 }
 
 /*============ DIV LOGO IN NAV-BAR =============*/
-.navbar-logo{
+.navbar-logo {
     display: flex;
     position: relative;
     left: 3%;
     align-items: center;
 }
-.navbar-logo img{
+
+.navbar-logo img {
     cursor: pointer;
-    width: 40px;    
+    width: 40px;
 }
 
 /*============ DIV NAV-BAR =============*/
 
-.nav-options{
+.nav-options {
     display: flex;
     position: absolute;
-    right: 20%;    
+    right: 20%;
     align-items: center;
 }
 
 /*============ NAV BAR LINKS =============*/
-.nav-links{ 
+.nav-links {
     list-style: none;
     display: flex;
-    position: relative;        
+    position: relative;
 }
-.nav-links a{ 
+
+.nav-links a {
     margin-left: 60px;
-    margin-right: 60px;    
-    display: flex;   
+    margin-right: 60px;
+    display: flex;
     color: white;
     text-decoration: none;
     letter-spacing: 2px;
@@ -79,51 +81,53 @@ nav{
     font-weight: 600;
 }
 
-#nav-home:hover{
-color: rgb(173, 255, 47);
+#nav-home:hover {
+    color: rgb(173, 255, 47);
 }
 
-#nav-about:hover{
+#nav-about:hover {
     color: rgb(225, 103, 255);
 }
 
-#nav-commands:hover{
+#nav-commands:hover {
     color: rgb(72, 207, 224);
 }
 
-#nav-creator:hover{
+#nav-creator:hover {
     color: rgb(253, 233, 51);
 }
 
 /*============ DIV BUTTONS =============*/
 
-.login-buttons{
+.login-buttons {
     display: flex;
     position: absolute;
     float: right;
-    right: 2%;    
+    right: 2%;
 }
 
 /*=========== SIGN IN BUTOON ===========*/
-#signin{
+#signin {
     border: 0;
     padding: 5px 10px;
     background: none;
     color: white;
     font-size: 15px;
-    margin-right: 0.5em; 
-    cursor: pointer; 
+    margin-right: 0.5em;
+    cursor: pointer;
 }
-#signin:hover{
-    color:rgb(255, 194, 64);
+
+#signin:hover {
+    color: rgb(255, 194, 64);
 }
-#signin:active{
-    color:rgb(212, 163, 55);
+
+#signin:active {
+    color: rgb(212, 163, 55);
 }
 
 /*=========== LOGIN BUTTON ===========*/
 
-#login{
+#login {
     padding: 6px 16px;
     background: rgb(255, 255, 255);
     border: 0;
@@ -133,30 +137,32 @@ color: rgb(173, 255, 47);
     cursor: pointer;
 }
 
-#login:hover{
+#login:hover {
     background: rgb(75, 110, 177);
-    color: rgb(255, 255, 255);}
+    color: rgb(255, 255, 255);
+}
 
-#login:active{
+#login:active {
     background: rgb(49, 73, 117);
 }
+
 /*============================================*/
 
-section{
-height: 100vh;
-background:rgb(29, 31, 35);
+section {
+    height: 100vh;
+    background: rgb(29, 31, 35);
 }
 
 /*=============== HOME SECTION ================*/
 
-.home{
-background-image: url('images/background2.png');
-background-size: cover;
+.home {
+    background-image: url('images/background2.png');
+    background-size: cover;
 }
 
 /*=============== TEXT HOME ================*/
 
-.intro-home{
+.intro-home {
     position: relative;
     display: flex;
     justify-content: center;
@@ -165,36 +171,40 @@ background-size: cover;
     flex-direction: column;
     top: 40%;
 }
-.intro-home h1{
+
+.intro-home h1 {
     color: white;
     font-size: 80px;
     font-weight: 600;
 }
-.intro-home h2{
+
+.intro-home h2 {
     font-size: 22px;
     font-weight: 500;
     color: white;
 }
 
 /*=============== ABOUT SECTION ================*/
-.about-cida{
+.about-cida {
     background-image: url('images/background2.png');
     background-size: cover;
 }
-.cida-image{
+
+.cida-image {
     top: 35%;
     display: flex;
     position: relative;
     justify-content: center;
-    
+
 }
-.cida-image img{
-width: 150px;
+
+.cida-image img {
+    width: 150px;
 }
 
 /*=============== ABOUT CIDA TEXTS ================*/
 
-.about-container{
+.about-container {
     top: 15%;
     display: flex;
     position: relative;
@@ -204,170 +214,238 @@ width: 150px;
     text-align: center;
 }
 
-.about-container h1{
-    color:white;
+.about-container h1 {
+    color: white;
     font-size: 50px;
 }
-.about-container p{
-    padding-left: 15%;    
+
+.about-container p {
+    padding-left: 15%;
     padding-right: 15%;
     margin-top: 2%;
     color: white;
     font-size: 20px;
 }
 
-.linked-image{
-margin-top: 6%;
+.linked-image {
+    margin-top: 6%;
 }
-.linked-image img{
+
+.linked-image img {
     width: 75%;
 }
 
 /*=============== COMMANDS SECTION ================*/
 
-.commands{
+.commands {
+    height: 200vh;
     background-image: url('images/background2.png');
-        
 }
 
-.gif-screen{
-   width: 800px;
-   height: 480px;
-   background: black;
-   display: flex;
-   position: relative;
-   top: 18%;
-   right: 3%;
-   float: right;   
-   border-radius: 1em;
+.gif-screen {
+    width: 800px;
+    height: 480px;
+    background: black;
+    display: flex;
+    position: relative;
+    top: 10%;
+    right: 3%;
+    float: right;
+    border-radius: 1em;
+    margin-left: 0%;
 }
 
-.gif-screen img{
+.gif-screen img {
     border-radius: 1em;
 }
 
-.commands-container{
+.commands-container {
     left: 3%;
-    top: 15%;
+    top: 7%;
     display: flex;
     position: relative;
     float: left;
     flex-direction: column;
     width: 49%;
+    margin-right: 0%;
 }
 
-.tittle-and-command{
-display: flex;
-position: relative;
-align-items: center;
-text-align: center;
-margin-top: 1em;
-}
-
-.tittle-and-command h3{
+.tittle-and-command {
     display: flex;
     position: relative;
-    margin-top: 2%;   
-    margin-left: 1%;    
-    font-weight: 500;
-    color: white;
+    align-items: center;
+    text-align: center;
+    margin-top: 1em;
 }
 
-.commands-container h1{
+.tittle-and-command h3 {
+    display: flex;
+    position: relative;
+    margin-top: 1.8%;
+    margin-left: 1%;
+    font-weight: 500;
+    color: white;    
+    border-radius: 0.7em;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: rgb(73, 98, 180);    
+}
+
+.commands-container h1 {
     margin-top: 0.5em;
     color: white;
 }
 
-.commands-container p{
-    margin-top: 0.2em;
+.commands-container p {
+    margin-top: 0.5em;
     padding-left: 2%;
     padding-right: 20%;
     color: white;
     font-weight: 500;
 }
 
-/*=============== IMAGES GIFS ==============*/
+/*=============== STREAM ALERT SECTION ==============*/
+.twitch-alerts-container {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    top: 20%;
+    width: 100%;
+
+}
+
+.twitch-alerts-container h1 {
+    display: flex;
+    position: relative;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 2%;
+
+}
+
+.twitch-alerts-container p {
+    color: white;
+    margin-bottom: 3%;
+}
+
+.twitch-alerts-container img {
+    border-radius: 1em;
+}
+
+
 
 /*=============== ACTIVE CLASS ==============*/
 
-.screen-active{
+.screen-active {
     z-index: 3;
 }
 
 /*=============== GIFS ID ==============*/
 
-#pokedexgif{
-    display: block;
-    z-index: 2;
-    position: absolute;
-}
-#mutegif{
+#pokedexgif {
     display: block;
     z-index: 1;
     position: absolute;
 }
-/*
-#kickgif{
-    display: flex;
-    z-index: 1;
-    position: absolute;
-}
-.bangif{
-    display: flex;
-    z-index: 1;
-    position: absolute;
-}
-*/
-/*=============== COMMANDS HOVER ==============*/
 
-.cpokedex h1:hover{
- color: rgb(255, 87, 87);
- cursor: pointer;
-}
+/*=============== COMMANDS HOVER AND ACTIVE ==============*/
 
-.cmute h1:hover{
-    color: rgb(255, 87, 87);
+.cpokedex h3:hover {
+    color: white;
+    background-color: rgb(53, 63, 124); 
+    cursor: pointer;
+}
+.cpokedex h3:active {
+    color: white;
+    background-color: rgb(37, 43, 87);
     cursor: pointer;
 }
 
-.ckick h1:hover{
-    color: rgb(255, 87, 87);
+/*----------------------------------------------------------*/
+
+.cmute h3:hover {
+    color: white;
+    background-color: rgb(53, 63, 124); 
+    cursor: pointer;
+}
+.cmute h3:active {
+    color: white;
+    background-color: rgb(37, 43, 87);
     cursor: pointer;
 }
 
-.cban h1:hover{
-    color: rgb(255, 87, 87);
+/*----------------------------------------------------------*/
+
+.ckick h3:hover {
+    color: white;
+    background-color: rgb(53, 63, 124); 
+    cursor: pointer;
+}
+.ckick h3:active {
+    color: white;
+    background-color: rgb(37, 43, 87);
     cursor: pointer;
 }
 
-/*=============================================*/
+/*----------------------------------------------------------*/
+
+.cban h3:hover {
+    color: white;
+    background-color: rgb(53, 63, 124); 
+    cursor: pointer;
+}
+.cban h3:active {
+    color: white;
+    background-color: rgb(37, 43, 87);
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------*/
+
+.cpurge h3:hover {
+    color: white;
+    background-color: rgb(53, 63, 124); 
+    cursor: pointer;
+}
+.cpurge h3:active {
+    color: white;
+    background-color: rgb(37, 43, 87);
+    cursor: pointer;
+}
+
+/*=========================================================*/
 
 
-.creator{
+.creator {
     background-image: url('images/background2.png');
     background-size: cover;
 }
 
-.creator h1{
+.creator h1 {
     display: flex;
     position: relative;
     margin-bottom: 1em;
     font-size: 50px;
     color: white;
     text-align: center;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     align-content: center;
-    top: 20%; 
+    top: 20%;
 }
 
 
-.creator-container{
+.creator-container {
     display: flex;
-    position: relative;   
-    top: 25%;   
+    position: relative;
+    top: 25%;
     text-align: center;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
     align-content: center;
     margin-left: 10%;
@@ -382,67 +460,140 @@ margin-top: 1em;
     border-radius: 2em;
 }
 
-.creator-picture img{    
+.creator-picture img {
     width: 80%;
-    border-radius: 50%;    
+    border-radius: 50%;
 }
 
-.creator-text-container{
-    color:white;
-    position: relative; 
+.creator-text-container {
+    color: white;
+    position: relative;
 }
 
-.creator-text-container h3{
+.creator-text-container h3 {
     display: flex;
-    font-size: 30px;    
+    font-size: 30px;
     padding-left: 2%;
     padding-right: 35%;
 }
-.creator-text-container h4{
-    display: flex;      
+
+.creator-text-container h4 {
+    display: flex;
     padding-left: 2%;
     padding-right: 35%;
     font-size: 20px;
 }
 
-.creator-text-container p{
+.creator-text-container p {
     text-align: left;
     display: flex;
-    padding-left: 2%;   
-    margin-top: 1.5%;    
+    padding-left: 2%;
+    margin-top: 1.5%;   
 }
 
+footer{
+    background-image: url('/cida/images/background2.png');
+    display: none;
+}
+
+.footer-info{
+    width: 100%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-info h3{
+    display: flex;
+    position: relative;
+    top: 90%;
+    align-items: center;   
+    justify-content: center;   
+    font-weight: 400;    
+    font-size: 15px;
+    color: white;    
+}
+
+.footer-social{
+    display: flex;
+    position: relative;   
+    top: 90px;
+    right: 5%;    
+    float: right;    
+    flex-direction: column;
+    margin: 0%;    
+}
+
+.footer-social a{
+    color: white;   
+    font-size: 22px;
+    list-style: none;
+    text-decoration: none;
+}
 
 /*=============================================*/
 /*             RESPONSIVE MOBILE               */
 /*=============================================*/
 
 @media screen and (max-width: 1280px) {
-    .nav-links a{
+    .nav-links a {
         margin-left: 40px;
         margin-right: 40px;
     }
-  
-  .commands-container{
-      width: 36%;
-  }
 
-  .tittle-and-command h3{
-      margin-top: 3.7%;
-  }
+    .commands {
+        height: 230vh;
+    }
 
-  .gif-screen{
-    width: 800px;
-    height: 480px;
-  }
+    .commands-container {
+        width: 46%;
+        top: 5%;
+    }
+
+    .tittle-and-command h1{
+        font-size: 20px;
+        margin-top: 0%;
+    }
+
+    .tittle-and-command h3 {        
+        margin-top: 0%;
+        font-size: 17px;
+    }
+    .commands-container p {
+        font-size: 15px;
+        padding-right: 18%;
+    }
+
+    .gif-screen {
+        width: 680px;
+        height: 400px;
+        top: 7%;        
+    }
+
+    .gif-screen img{        
+        width: 680px;
+        height: 400px;
+    }
+
+    .twitch-alerts-container {
+        top: 15%;
+    }
+
+    .twitch-alerts-container p {
+        padding-right: 7%;
+        padding-left: 7%;        
+    }
+
+
 }
 
 
 
 @media screen and (max-width: 768px) {
-    html, body {
-        overflow-x:hidden 
-      } 
+
+    html,
+    body {
+        overflow-x: hidden
+    }
 
 
 }
