@@ -2,7 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Cabin', sans-serif;
+    font-family: 'Cabin', sans-serif;   
 }
 
 body {
@@ -237,9 +237,13 @@ section {
 
 /*=============== COMMANDS SECTION ================*/
 
-.commands {
-    height: 200vh;
+.commands {    
     background-image: url('images/background2.png');
+}
+
+.commands-overall-container{
+    top: 15%;
+    position: relative;
 }
 
 .gif-screen {
@@ -248,11 +252,12 @@ section {
     background: black;
     display: flex;
     position: relative;
-    top: 10%;
+    top: 17%;
     right: 3%;
     float: right;
     border-radius: 1em;
     margin-left: 0%;
+    
 }
 
 .gif-screen img {
@@ -261,7 +266,7 @@ section {
 
 .commands-container {
     left: 3%;
-    top: 7%;
+    top: 14%;
     display: flex;
     position: relative;
     float: left;
@@ -284,12 +289,12 @@ section {
     margin-top: 1.8%;
     margin-left: 1%;
     font-weight: 500;
-    color: white;    
+    color: white;
     border-radius: 0.7em;
     padding: 0.1em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    background-color: rgb(73, 98, 180);    
+    background-color: rgb(73, 98, 180);
 }
 
 .commands-container h1 {
@@ -314,7 +319,7 @@ section {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    top: 20%;
+    top: 0%;
     width: 100%;
 
 }
@@ -357,9 +362,10 @@ section {
 
 .cpokedex h3:hover {
     color: white;
-    background-color: rgb(53, 63, 124); 
+    background-color: rgb(53, 63, 124);
     cursor: pointer;
 }
+
 .cpokedex h3:active {
     color: white;
     background-color: rgb(37, 43, 87);
@@ -370,9 +376,10 @@ section {
 
 .cmute h3:hover {
     color: white;
-    background-color: rgb(53, 63, 124); 
+    background-color: rgb(53, 63, 124);
     cursor: pointer;
 }
+
 .cmute h3:active {
     color: white;
     background-color: rgb(37, 43, 87);
@@ -383,9 +390,10 @@ section {
 
 .ckick h3:hover {
     color: white;
-    background-color: rgb(53, 63, 124); 
+    background-color: rgb(53, 63, 124);
     cursor: pointer;
 }
+
 .ckick h3:active {
     color: white;
     background-color: rgb(37, 43, 87);
@@ -396,9 +404,10 @@ section {
 
 .cban h3:hover {
     color: white;
-    background-color: rgb(53, 63, 124); 
+    background-color: rgb(53, 63, 124);
     cursor: pointer;
 }
+
 .cban h3:active {
     color: white;
     background-color: rgb(37, 43, 87);
@@ -409,9 +418,10 @@ section {
 
 .cpurge h3:hover {
     color: white;
-    background-color: rgb(53, 63, 124); 
+    background-color: rgb(53, 63, 124);
     cursor: pointer;
 }
+
 .cpurge h3:active {
     color: white;
     background-color: rgb(37, 43, 87);
@@ -488,50 +498,100 @@ section {
     text-align: left;
     display: flex;
     padding-left: 2%;
-    margin-top: 1.5%;   
+    margin-top: 1.5%;
 }
 
-footer{
-    background-image: url('/cida/images/background2.png');
-    display: none;
+footer {
+    background-image: url('/cida/images/background2.png');    
+    height: 35vh;
+    padding: 0px;
+   
 }
+/*-----------CONTAINER TRANSPARENT------------*/
 
-.footer-info{
+.footer-container{    
     width: 100%;
-    height: 250px;
+    height: 100%;  
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.footer-info h3{
+/*-----------All Rights------------*/
+.footer-info{
     display: flex;
     position: relative;
+    align-items: center;
+    justify-content: center;
     top: 90%;
-    align-items: center;   
-    justify-content: center;   
-    font-weight: 400;    
-    font-size: 15px;
-    color: white;    
+}
+.footer-info h3 {   
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
 }
 
-.footer-social{
+/*-----------SOCIAL MEDIA ------------*/
+
+.footer-social {
     display: flex;
-    position: relative;   
-    top: 90px;
-    right: 5%;    
-    float: right;    
-    flex-direction: column;
-    margin: 0%;    
+    position: relative;
+    right: 7%;
+    float: right;   
+    flex-direction: column;   
+    top: 15%;
+     
 }
 
-.footer-social a{
-    color: white;   
-    font-size: 22px;
-    list-style: none;
-    text-decoration: none;
+.footer-social h3{
+    color: white;
+    margin-bottom: 20%;
+    font-size: 25px;
 }
+
+.footer-social li{
+    list-style: none;
+    
+}
+.footer-social a {    
+    display: flex;
+    color: white;
+    font-size: 20px;   
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.footer-social img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5%;
+}
+/*----------- more about CIDA ------------*/
+.footer-about-cida{
+    display: flex;
+    position: relative;
+    float: left;
+    left: 5%;   
+    top: 25%;    
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.footer-about-cida img{
+    width: 7%;
+    margin-right: 2%;
+}
+
+
+.footer-about-cida p{
+    color:white;
+    padding-right: 40%;
+    
+}
+
 
 /*=============================================*/
-/*             RESPONSIVE MOBILE               */
+/*                 RESPONSIVE                  */
 /*=============================================*/
 
 @media screen and (max-width: 1280px) {
@@ -541,23 +601,24 @@ footer{
     }
 
     .commands {
-        height: 230vh;
+        height: 100vh;
     }
 
     .commands-container {
         width: 46%;
-        top: 5%;
+        top: 15%;
     }
 
-    .tittle-and-command h1{
+    .tittle-and-command h1 {
         font-size: 20px;
         margin-top: 0%;
     }
 
-    .tittle-and-command h3 {        
+    .tittle-and-command h3 {
         margin-top: 0%;
         font-size: 17px;
     }
+
     .commands-container p {
         font-size: 15px;
         padding-right: 18%;
@@ -566,26 +627,148 @@ footer{
     .gif-screen {
         width: 680px;
         height: 400px;
-        top: 7%;        
+        top: 17%;
     }
 
-    .gif-screen img{        
+    .gif-screen img {
         width: 680px;
         height: 400px;
     }
 
     .twitch-alerts-container {
-        top: 15%;
+        top: 3%;
     }
 
     .twitch-alerts-container p {
         padding-right: 7%;
-        padding-left: 7%;        
+        padding-left: 7%;
+    }
+    .footer-social{
+        top: 7%;
+    }
+
+    .footer-about-cida{
+        top: 24%;
+    }
+
+    .footer-about-cida img{
+        width: 8%;
     }
 
 
 }
 
+
+@media screen and (max-width: 1024px){
+
+    .nav-links a {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .nav-options{        
+        right: 15%;
+    }
+
+    .commands-container {
+        left: 3%;
+        top: 14%;
+        display: flex;
+        position: relative;
+        float: left;
+        flex-direction: column;
+        width: 38%;
+        margin-right: 0%;
+    }
+
+    .gif-screen {
+        width: 600px;
+        height: 350px;
+        top: 17%;
+    }
+
+    .gif-screen img {
+        width: 600px;
+        height: 350px;
+    }
+
+    .footer-social{
+        top: 15%;
+    }
+    .footer-about-cida{
+        top: 30%;
+        width: 80%;
+    }
+
+
+}
+
+@media screen and (max-width: 960px) {
+    .nav-links a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .nav-options {        
+        right: 15%;
+    }
+    
+    .commands-overall-container {
+        display: flex;      
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  
+    .commands-container {
+        display: flex;
+        align-items: center;        
+        width: 100%;
+        flex-direction: row;       
+        float: none;
+        margin-top: 2%;
+    }
+
+    .commands-container p{
+        padding-right: 0%;
+    }
+
+    .gif-screen {
+        float:none;
+        width: 600px;
+        height: 350px;      
+    }
+
+    .gif-screen img{
+        width: 600px;
+        height: 350px;
+    }
+    
+    .cpokedex{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .cmute{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .ckick{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .cban{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+    .cpurge{
+        padding-left: 5em;
+        padding-right: 5em;
+    }
+
+}
+
+/*=============================================*/
+/*                    MOBILE                   */
+/*=============================================*/
 
 
 @media screen and (max-width: 768px) {
