@@ -59,8 +59,17 @@ const kick = document.querySelector('.ckick h3');
 const ban = document.querySelector('.cban h3');
 const purge = document.querySelector('.cpurge h3');
 
+//RESPONSIVE DIV
+const pokedexR = document.querySelector('.pokeR');
+const muteR = document.querySelector('.muteR');
+const kickR = document.querySelector('.kickR');
+const banR = document.querySelector('.banR');
+const purgeR = document.querySelector('.purgeR');
+
+//SCREEN ID
 let img = document.getElementById('pokedexgif');
 
+// CHANGES THE GIF DIRECTORY
 pokedex.addEventListener('click', ()=>{
     img.src = "/cida/images/gifs/pokedex.gif";
 });
@@ -78,6 +87,29 @@ ban.addEventListener('click', ()=>{
 });
 
 purge.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/purge.gif";
+});
+
+//====================================================
+//                 RESPONSIVE DIV
+//====================================================
+
+pokedexR.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/pokedex.gif";
+});
+muteR.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/mute.gif";
+});
+
+kickR.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/kick.gif";
+});
+
+banR.addEventListener('click', ()=>{
+    img.src = "/cida/images/gifs/ban.gif";
+});
+
+purgeR.addEventListener('click', ()=>{
     img.src = "/cida/images/gifs/purge.gif";
 });
 
