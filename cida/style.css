@@ -266,7 +266,7 @@ section {
 
 .commands-container {
     left: 3%;
-    top: 14%;
+    top: 12%;
     display: flex;
     position: relative;
     float: left;
@@ -280,10 +280,45 @@ section {
     position: relative;
     align-items: center;
     text-align: center;
-    margin-top: 1em;
 }
 
 .tittle-and-command h3 {
+    display: flex;
+    position: relative;   
+    margin-left: 1%;
+    font-weight: 500;
+    color: white;
+    border-radius: 0.7em;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    background-color: rgb(73, 98, 180);
+}
+
+.commands-container h1 {
+    color: white;
+}
+
+.commands-container p {
+    margin-top: 0.5em;
+    padding-left: 2%;
+    padding-right: 20%;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2.5%;
+}
+
+/*----- SECOND COMMAND -----*/
+
+.tittle-and-command2{
+  display: none;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.tittle-and-command2 h3 {
     display: flex;
     position: relative;
     margin-top: 1.8%;
@@ -297,18 +332,6 @@ section {
     background-color: rgb(73, 98, 180);
 }
 
-.commands-container h1 {
-    margin-top: 0.5em;
-    color: white;
-}
-
-.commands-container p {
-    margin-top: 0.5em;
-    padding-left: 2%;
-    padding-right: 20%;
-    color: white;
-    font-weight: 500;
-}
 
 /*=============== STREAM ALERT SECTION ==============*/
 .twitch-alerts-container {
@@ -578,7 +601,7 @@ footer {
 }
 
 .footer-about-cida img{
-    width: 7%;
+    width: 90px;
     margin-right: 2%;
 }
 
@@ -622,6 +645,7 @@ footer {
     .commands-container p {
         font-size: 15px;
         padding-right: 18%;
+        
     }
 
     .gif-screen {
@@ -652,7 +676,7 @@ footer {
     }
 
     .footer-about-cida img{
-        width: 8%;
+        width: 70px;
     }
 
 
@@ -703,6 +727,11 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
+
+    html,body{
+        overflow-x: hidden;
+    }
+
     .nav-links a {
         margin-left: 15px;
         margin-right: 15px;
@@ -713,56 +742,114 @@ footer {
     }
     
     .commands-overall-container {
-        display: flex;      
+        display: flex;
+        position: relative;      
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: center;              
     }
   
     .commands-container {
         display: flex;
-        align-items: center;        
+        justify-content: center;
+        position: relative;
+        flex-direction: row;        
         width: 100%;
-        flex-direction: row;       
-        float: none;
-        margin-top: 2%;
+        margin-top: 3%;
+        left: 0%;
+        padding-left: 2%;
+        padding-right: 2%;                
     }
 
     .commands-container p{
-        padding-right: 0%;
+        text-align: center;
+        padding-right: 1%;
+        padding-left: 1%;
     }
 
     .gif-screen {
-        float:none;
+        width: 100%;
+        left: 0%; 
         width: 600px;
-        height: 350px;      
+        height: 350px;
     }
 
     .gif-screen img{
         width: 600px;
         height: 350px;
     }
+
+    .tittle-and-command h3{
+        display: none;
+    }
     
+    .tittle-and-command2{
+        display: flex;
+        margin-top: 5%;
+    }
+    
+    .tittle-and-command2 h3{
+        margin: 0%;
+    }
+
     .cpokedex{
-        padding-left: 5em;
-        padding-right: 5em;
+        display: flex;
+        flex-direction: column;         
+        text-align: center;
+        align-items: center;
+
+        width: 20%;
+        margin: 0%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        
     }
     .cmute{
-        padding-left: 5em;
-        padding-right: 5em;
+        display: flex;
+        flex-direction: column;         
+        text-align: center;
+        align-items: center;
+        top: 0%;
+        width: 20%;
+        margin: 0%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        
     }
     .ckick{
-        padding-left: 5em;
-        padding-right: 5em;
+        display: flex;
+        flex-direction: column;         
+        text-align: center;
+        align-items: center;
+
+        width: 20%;
+        margin: 0%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
     .cban{
-        padding-left: 5em;
-        padding-right: 5em;
+        display: flex;
+        flex-direction: column;         
+        text-align: center;
+        align-items: center;
+
+        width: 20%;
+        margin: 0%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
     .cpurge{
-        padding-left: 5em;
-        padding-right: 5em;
+        display: flex;
+        flex-direction: column;         
+        text-align: center;
+        align-items: center;
+
+        width: 20%;
+        margin: 0%;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
+
 
 }
 
