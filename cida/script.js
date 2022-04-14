@@ -71,7 +71,7 @@ let img = document.getElementById('pokedexgif');
 
 // CHANGES THE GIF DIRECTORY
 pokedex.addEventListener('click', ()=>{
-    img.src = "/cida/images/gifs/pokedex.gif";
+    img.src = "/cida/images/gifs/pokedex.gif";    
 });
 
 mute.addEventListener('click', ()=>{
