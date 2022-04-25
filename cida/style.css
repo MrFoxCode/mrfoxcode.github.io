@@ -895,7 +895,28 @@ footer {
     }
 
     .nav-options{
-        display: none;
+        display: flex;
+        top: 100%;
+        justify-content: center;
+        right: 0%;    
+        width: 100%;
+        height: 640px;        
+        background: rgb(26, 26, 26);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;          
+                
+    }
+
+    .active-nav{
+        transform: translateX(0%);         
+    }
+
+    .nav-links{
+        flex-direction: column;
+        justify-content: space-between;
+        height: 60%;
+        text-align: center;
+        align-items: center;
     }
 
     .cida-title{
@@ -903,8 +924,8 @@ footer {
     }
 
     .login-buttons{
-        right: 20%;
-        display: none;
+        right: 18%;
+        display: flex;
     }
 
     .burger{
@@ -920,6 +941,10 @@ footer {
     .intro-home h2{
         font-size: 17px;
 
+    }
+
+    .commands-overall-container{
+        top: 8%;
     }
 
     .gif-screen{
@@ -1040,8 +1065,7 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 330px;
-        
+        width: 330px;        
     }
 
 

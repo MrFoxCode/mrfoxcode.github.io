@@ -23,6 +23,12 @@ window.onbeforeunload = function (){
     topOfHome.scrollIntoView();  
 }
 
+let pageRefresh = document.querySelector('.cida-title');
+//reflesh page
+pageRefresh.addEventListener('click', ()=>{
+location.reload();
+});
+
 
 // FUNCTION SCROLL WITH SCROLL BEHAVIOR
 function scrollTo(element) {
@@ -35,18 +41,22 @@ function scrollTo(element) {
 
 homeRef.addEventListener('click', ()=>{
 scrollTo(topOfHome);
+navBar.classList.remove('active-nav');
 });
 
 aboutRef.addEventListener('click', ()=>{
     scrollTo(topOfAbout);
+    navBar.classList.remove('active-nav');
 });
 
 commandsRef.addEventListener('click', ()=>{
     scrollTo(topOfCommands);
+    navBar.classList.remove('active-nav');
 });
 
 creatorRef.addEventListener('click', ()=>{
     scrollTo(topOfCreator);
+    navBar.classList.remove('active-nav');
 });
 
 
@@ -112,5 +122,19 @@ banR.addEventListener('click', ()=>{
 purgeR.addEventListener('click', ()=>{
     img.src = "/cida/images/gifs/purge.gif";
 });
+
+
+
+//====================================================
+//    BURGER - ACTIVE NAV BAR IN RESPONSIVE MODE
+//====================================================
+
+let burger = document.querySelector('.burger');
+let navBar = document.querySelector('.nav-options');
+
+burger.addEventListener('click', ()=>{
+    navBar.classList.toggle('active-nav');
+});
+
 
 //====================================================
