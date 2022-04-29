@@ -1279,14 +1279,34 @@ font-weight: 500;
 
 @media screen and (max-width:1024px){
     .nav-title h1{
-        margin-left: 20%;
+        margin-left: -70%;
     }
     .nav-links{
-        width: 50%;        
+        width: 40%;        
     }
     html, body {
         overflow-x:hidden 
-      }     
+    }
+    .container-main-bg{
+        height: 350vh;    
+    }
+    
+    .skill-bar{
+        left: 5%;
+    }
+
+    .skill-bar2{
+        left: 5%;
+    }
+
+    .software-bar{
+        right: 5%;
+    }
+    .software-bar2{
+        right: 5%;
+    }
+
+   
 }
 
 /* MOBILE RESOLUTION */
