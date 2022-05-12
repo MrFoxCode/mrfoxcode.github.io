@@ -1344,7 +1344,7 @@ font-weight: 500;
 
 
 .nav-title h1{
-    left: -25%;
+    left: 60%;
     display: flex;
     position: relative;
 }
@@ -1387,7 +1387,7 @@ font-weight: 500;
 }
 
 .container-main-bg{
-    height: 500vh;
+    height: 530vh;
 }
 .container-main-textside{
     height: 26%;
