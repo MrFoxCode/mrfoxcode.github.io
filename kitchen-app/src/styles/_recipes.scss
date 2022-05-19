@@ -1,0 +1,40 @@
+.recipes{
+    @include flexCenter();   
+    padding: 2em;
+    height: 100vh;
+    a{
+        display: flex;
+    }      
+}
+
+/*Recipe Pattern style*/
+.recipe{
+    @include flexCenter();
+    flex-direction: column;
+    justify-content: end;
+    background: rgba(145, 145, 145, 0.8);
+    border-radius: 0.5em;
+    width: 250px;
+    height: 300px;
+    margin-left: 2em;
+    margin-right: 2em;
+    button{
+        @extend .button1;
+        margin-bottom: 40px;        
+    }
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition-duration: 0.4s;
+        /*idea is to shows the recipe image*/
+        background-color: rgb(199, 45, 45);        
+    }
+    h1{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+}
+

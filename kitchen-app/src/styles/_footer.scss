@@ -1,0 +1,10 @@
+.footer-container{
+    background-color: rgb(80, 80, 80);
+    height: 50vh;
+    @include flexCenter();
+}
+
+.content-inside{
+    color: white;
+    font-size: 12px;
+}

@@ -1,0 +1,55 @@
+$navbarcolor: rgb(226, 226, 226);
+$cursorhover: rgb(99, 99, 99);
+$textcolor: rgb(29, 29, 29);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*BUTTONS*/
+.searchbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 26px;
+    border:none;
+    border-radius: 5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    background-color: rgb(192, 192, 192);
+    color: white;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(163, 163, 163);            
+    }&:active{
+        background-color: rgb(78, 78, 78);    
+    }
+    img{                        
+        width: 12px;
+        height: 12px;
+    }        
+}
+
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    width: 100px;
+    border:none;
+    border-radius: 5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    background-color: rgb(110, 110, 103);
+    color: white;
+    
+
+}
