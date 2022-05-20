@@ -12,6 +12,7 @@ function RecipesMain(){
             <a href = "">See all Recipes</a>
         </div>
     );
+
 }
 
 export default RecipesMain;
