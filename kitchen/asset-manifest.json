@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.d53af4a1.css",
-    "main.js": "./static/js/main.7ff85668.js",
+    "main.css": "./static/css/main.1a95088f.css",
+    "main.js": "./static/js/main.564b8327.js",
     "static/js/787.0a8471e9.chunk.js": "./static/js/787.0a8471e9.chunk.js",
     "static/media/kitchen_bg.jpg": "./static/media/kitchen_bg.6c9f8ad5812d59ed1555.jpg",
-    "static/media/recipes_bg.jpg": "./static/media/recipes_bg.b4e267b4f6b75d99fdb5.jpg",
+    "static/media/recipes_bg2.jpg": "./static/media/recipes_bg2.600f9ef6a503da316db6.jpg",
     "static/media/burger.jpg": "./static/media/burger.43a38045dc9419861d9d.jpg",
     "static/media/cake.jpg": "./static/media/cake.03265da9be6d9da27447.jpg",
     "static/media/drink.jpg": "./static/media/drink.6258c3eba66649c0f48f.jpg",
     "static/media/pancake.jpg": "./static/media/pancake.c5346e57f074472ab9f9.jpg",
     "index.html": "./index.html",
-    "main.d53af4a1.css.map": "./static/css/main.d53af4a1.css.map",
-    "main.7ff85668.js.map": "./static/js/main.7ff85668.js.map",
+    "main.1a95088f.css.map": "./static/css/main.1a95088f.css.map",
+    "main.564b8327.js.map": "./static/js/main.564b8327.js.map",
     "787.0a8471e9.chunk.js.map": "./static/js/787.0a8471e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d53af4a1.css",
-    "static/js/main.7ff85668.js"
+    "static/css/main.1a95088f.css",
+    "static/js/main.564b8327.js"
   ]
 }
